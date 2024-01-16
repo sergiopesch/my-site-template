@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #f3f4f6;
+    /* This is the Tailwind CSS color for bg-gray-100 */
+}

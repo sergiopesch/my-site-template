@@ -2,9 +2,8 @@ import Link from "next/link";
 
 export default function ProjectPosts() {
     return (
-        <div key="1" className="flex flex-col min-h-screen bg-gray-100 text-gray-900 px-4 sm:px-6 md:px-8 lg:px-10">
-        <main className="flex-1 mt-24 bg-gray-100">
-            <section className="w-full flex flex-col items-center justify-center space-y-1 lg:space-y-2">
+        <main className="flex-1">
+            <section className="w-full flex flex-col items-center justify-center space-y-1 lg:space-y-2 py-10 lg:py-20">
                 <div className="px-4 md:px-6 space-y-7 xl:space-y-10">
                     <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">My Projects</h1>
                     <div className="mx-auto max-w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -76,6 +75,5 @@ export default function ProjectPosts() {
                 </div>
             </section>
             </main>
-        </div>
     );
 }

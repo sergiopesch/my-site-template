@@ -7,8 +7,7 @@ export default function Contac() {
                     <div className="px-4 md:px-6 space-y-7 xl:space-y-10">
                         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Contact Me</h1>
                         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 text-center leading-relaxed">
-                            I'm always open to new opportunities, collaborations, or just a chat. You can reach me through the
-                            following channels:
+                            If you're looking to connect, drop me a line, and let's blend ideas like mismatched socks on an adventurous Tuesday!
                         </p>
                         <div className="flex justify-center space-x-4">
                             <Link href="#">

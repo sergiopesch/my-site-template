@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from 'next/image';
 export default function ProjectPosts() {
     return (
         <main className="flex-1">
@@ -9,15 +9,12 @@ export default function ProjectPosts() {
                     <div className="mx-auto max-w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Project 1"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Project 1</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Project 1.</p>
@@ -25,15 +22,12 @@ export default function ProjectPosts() {
                         </Link>
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Project 2"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Project 2</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Project 2.</p>
@@ -41,15 +35,12 @@ export default function ProjectPosts() {
                         </Link>
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Project 3"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Project 3</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Project 3.</p>
@@ -57,15 +48,12 @@ export default function ProjectPosts() {
                         </Link>
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Project 4"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Project 4</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Project 4.</p>

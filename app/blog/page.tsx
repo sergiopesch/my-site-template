@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from 'next/image';
+
 export default function BlogPosts() {
     return (
         <main className="flex-1">
@@ -8,15 +10,12 @@ export default function BlogPosts() {
                     <div className="mx-auto max-w-[700px] grid grid-cols-1 md:grid-cols-2 gap-8">
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Blog 1"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Blog 1</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Blog 1.</p>
@@ -24,15 +23,12 @@ export default function BlogPosts() {
                         </Link>
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Blog 2"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Blog 2</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Blog 2.</p>
@@ -40,15 +36,12 @@ export default function BlogPosts() {
                         </Link>
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Blog 3"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Blog 3</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Blog 3.</p>
@@ -56,15 +49,12 @@ export default function BlogPosts() {
                         </Link>
                         <Link href="#">
                             <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
-                                <img
-                                    className="w-40 h-40 object-cover rounded-lg mb-4"
-                                    height="200"
+                                <Image
                                     src="/placeholder.svg"
-                                    style={{
-                                        aspectRatio: "200/200",
-                                        objectFit: "cover",
-                                    }}
-                                    width="200"
+                                    alt="Blog 4"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-40 h-40 object-cover rounded-lg mb-4"
                                 />
                                 <h2 className="text-xl font-bold text-center">Blog 4</h2>
                                 <p className="text-gray-500 text-center leading-relaxed">A brief description of Blog 4.</p>

@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     
       <div className="flex flex-col min-h-screen mx-4 sm:mx-6 md:mx-8 lg:mx-10">
         {/* Header */}
-        <header className="bg-gray-100 px-4 lg:px-6 py-6 flex items-center justify-between space-x-4 lg:space-x-6">
+        <header className="px-4 lg:px-6 py-6 flex items-center justify-between space-x-4 lg:space-x-6">
         <Link href="/" className="text-lg font-bold tracking-wider text-gray-900 hover:text-gray-700">
           Your Name
         </Link>
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
 
         {/* Footer */}
-      <footer className="py-6 bg-gray-100 text-gray-900">
+      <footer className="py-6 text-gray-900">
         <p className="text-xs sm:text-sm text-center">© Your Name. All rights reserved.</p>
       </footer>
       </div>

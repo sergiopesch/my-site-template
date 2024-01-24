@@ -6,8 +6,7 @@ export default function Component() {
             Welcome to Your Personal Website Template
           </h1>
           <p className="text-gray-500 md:text-xl dark:text-gray-400 text-center">
-            This is your digital space to share your creations with the world. Make it your own and share it.
-            Let's connect!
+            This is your digital space to share your creations with the world. Make it your own and share it! 
           </p>
         </section>
       </main>

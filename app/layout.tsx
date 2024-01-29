@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ModeToggle } from '@/components/DarkModeToggle';
-import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ['latin'] });
 
 
@@ -30,7 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           
         <Link href="/contact" className="text-sm font-medium hover:underline underline-offset-4">
         Contact
-        </Link>
+          </Link>
+          
         <ModeToggle />
         
         </nav>

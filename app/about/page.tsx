@@ -1,28 +1,51 @@
-import Image from "next/image";
+import type { Metadata } from "next";
 
-export default function About() {
+import { JsonLd } from "@/components/json-ld";
+import { siteConfig } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: `About ${siteConfig.author.name} and this publication.`,
+  alternates: { canonical: siteConfig.absoluteUrl("/about") },
+};
+
+export default function AboutPage() {
+  const profilePage = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${siteConfig.absoluteUrl("/about")}#profile-page`,
+    name: `About ${siteConfig.author.name}`,
+    url: siteConfig.absoluteUrl("/about"),
+    mainEntity: {
+      "@type": "Person",
+      "@id": `${siteConfig.author.url}#person`,
+      name: siteConfig.author.name,
+      url: siteConfig.author.url,
+    },
+    inLanguage: siteConfig.language,
+  };
+
   return (
-    
-      <main className="flex-1">
-        <section className="w-full flex flex-col items-center justify-center space-y-1 lg:space-y-2 py-10 lg:py-20">
-          <div className="px-4 md:px-6 space-y-7 xl:space-y-10">
-            <Image
-            src="/profilepic200x200.png"
-            height={200}
-            width={200}
-            alt="Profile picture"
-            className="w-40 h-40 rounded-full object-cover mb-6 mx-auto"
-            />
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">About Me</h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 text-center leading-relaxed">
-            I once tried yoga and achieved a state of unconsciousness, which I hear is the point. I&apos;m an
-            enthusiast of fine dining at any place with a drive-thru. My life goal is to find socks that match
-            and I believe in living every day like it&apos;s Tuesday — the potential is limitless.
-            </p>
-            
-          </div>
-        </section>
-      </main>
-    
-  )
+    <>
+      <JsonLd data={profilePage} />
+      <section className="simple-page">
+        <h1>About</h1>
+        <div className="simple-page__body">
+          <p>
+            This template gives independent makers, writers, researchers, and teams a
+            durable place to publish work on the open web.
+          </p>
+          <p>
+            Replace this page with a concise biography, the context readers need to
+            understand your work, and links to profiles you control. Keep claims specific
+            and keep dates, sources, and licensing honest.
+          </p>
+          <p>
+            Every published entry is available as a human-readable page and a canonical
+            Markdown document, with matching metadata generated from one validated record.
+          </p>
+        </div>
+      </section>
+    </>
+  );
 }

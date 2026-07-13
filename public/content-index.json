@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.2",
+  "site": {
+    "name": "Your Name",
+    "url": "https://example.com",
+    "description": "A small, durable collection of practical projects and writing about thoughtful software.",
+    "language": "en",
+    "author": {
+      "name": "Your Name",
+      "email": "hello@example.com",
+      "url": "https://example.com/about"
+    }
+  },
+  "items": [
+    {
+      "id": "https://example.com/writing/designing-for-durable-discovery",
+      "kind": "post",
+      "slug": "designing-for-durable-discovery",
+      "title": "Designing for durable discovery",
+      "summary": "Why canonical URLs, structured metadata, plain-text alternatives, and honest provenance make the open web easier to use.",
+      "url": "https://example.com/writing/designing-for-durable-discovery",
+      "aliases": [
+        "https://example.com/blog/durable-discovery"
+      ],
+      "markdown_url": "https://example.com/writing/designing-for-durable-discovery.md",
+      "markdown_sha256": "924d18844b5b14b6b04bf0c92907294da68ac0c7d6327be074fe3f3bf0aaac0a",
+      "date_published": "2026-04-12",
+      "date_modified": "2026-04-18",
+      "content_updated": "2026-04-18",
+      "language": "en",
+      "topics": [
+        "Information architecture",
+        "Web publishing",
+        "Metadata"
+      ],
+      "repository": null,
+      "repository_created": null,
+      "repository_updated": null,
+      "demo_url": null,
+      "sources": [
+        {
+          "title": "Cool URIs don't change",
+          "url": "https://www.w3.org/Provider/Style/URI"
+        }
+      ],
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "scope": "article text",
+        "verified": "2026-04-18"
+      },
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/writing/designing-for-durable-discovery",
+        "content_updated": "2026-04-18"
+      },
+      "content_text": "Discovery is durable when a reader can understand what a page is, where it came from, and whether it is still current without depending on one interface. That starts with stable canonical URLs and honest dates. A publication date describes when an idea first became public. A content update describes an editorial change. Repository activity, when it exists, is useful context but should not silently rewrite either of those facts. The same record can then support an HTML page, a concise Markdown alternate, a feed item, and a machine-readable index. Each representation should point back to the same canonical resource and carry the same title, summary, author, and freshness information. Good metadata is not decoration. It is the connective tissue that lets browsers, readers, search engines, and future tools discover the same work without guessing."
+    },
+    {
+      "id": "https://example.com/writing/a-slower-better-publishing-loop",
+      "kind": "post",
+      "slug": "a-slower-better-publishing-loop",
+      "title": "A slower, better publishing loop",
+      "summary": "A practical rhythm for drafting, checking sources, and updating work without losing context.",
+      "url": "https://example.com/writing/a-slower-better-publishing-loop",
+      "aliases": [
+        "https://example.com/blog/publishing-loop"
+      ],
+      "markdown_url": "https://example.com/writing/a-slower-better-publishing-loop.md",
+      "markdown_sha256": "00b1421cc1ad2e59743ec4455471c77739b1950a53275726a1720038c56b8820",
+      "date_published": "2026-03-03",
+      "date_modified": "2026-03-03",
+      "content_updated": "2026-03-03",
+      "language": "en",
+      "topics": [
+        "Writing practice",
+        "Editorial systems",
+        "Sustainable pace"
+      ],
+      "repository": null,
+      "repository_created": null,
+      "repository_updated": null,
+      "demo_url": null,
+      "sources": [],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/writing/a-slower-better-publishing-loop",
+        "content_updated": "2026-03-03"
+      },
+      "content_text": "A publishing habit becomes easier to sustain when it has fewer hidden decisions. Capture the idea, shape one useful claim, review it in context, and publish it in formats that can be checked together. The slower loop is not an argument for polishing forever. It is a way to separate drafting from distribution. Drafts can be incomplete and private. Published work should have a stable address, a clear summary, and dates that say what actually changed. Once those boundaries are explicit, automation can do the repetitive work. A single catalog can produce feeds, indexes, sitemaps, and Markdown alternates while tests check that every representation agrees. The result is a quieter system: fewer rushed posts, fewer stale copies, and more confidence that each published note will still make sense when someone discovers it later."
+    },
+    {
+      "id": "https://example.com/projects/local-first-field-notes",
+      "kind": "project",
+      "slug": "local-first-field-notes",
+      "title": "Local First Field Notes",
+      "summary": "A small offline-first notebook for collecting observations without sending personal data to a server.",
+      "url": "https://example.com/projects/local-first-field-notes",
+      "aliases": [
+        "https://example.com/projects/field-notes"
+      ],
+      "markdown_url": "https://example.com/projects/local-first-field-notes.md",
+      "markdown_sha256": "587e2fa50a7a7181be44c252da251a43e9091078f23b8e777f880a83af76758c",
+      "date_published": "2025-01-18",
+      "date_modified": "2025-03-04",
+      "content_updated": "2025-03-04",
+      "language": "en",
+      "topics": [
+        "Local-first software",
+        "Offline workflows",
+        "Product design"
+      ],
+      "repository": {
+        "visibility": "private",
+        "created": "2024-11-12",
+        "updated": "2025-02-27"
+      },
+      "repository_created": "2024-11-12",
+      "repository_updated": "2025-02-27",
+      "demo_url": null,
+      "sources": [
+        {
+          "title": "Local-first software",
+          "url": "https://www.inkandswitch.com/local-first/"
+        }
+      ],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/projects/local-first-field-notes",
+        "content_updated": "2025-03-04"
+      },
+      "content_text": "Local First Field Notes explores a simple idea: useful notes should not depend on a network connection or an account being available at the moment of capture. The prototype keeps writing on the device first, makes sync state visible, and treats publishing as a separate editorial action. A note can remain private, move between devices, or become a small public document without changing the original record. The visual system borrows from field journals: generous margins, quiet status labels, and a clear distinction between an observation, its revision history, and the version eventually shared."
+    }
+  ]
+}

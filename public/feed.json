@@ -1,0 +1,58 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Your Name — Projects and Writing",
+  "home_page_url": "https://example.com",
+  "feed_url": "https://example.com/feed.json",
+  "description": "A small, durable collection of practical projects and writing about thoughtful software.",
+  "language": "en",
+  "authors": [
+    {
+      "name": "Your Name",
+      "url": "https://example.com/about"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://example.com/writing/designing-for-durable-discovery",
+      "url": "https://example.com/writing/designing-for-durable-discovery",
+      "title": "Designing for durable discovery",
+      "summary": "Why canonical URLs, structured metadata, plain-text alternatives, and honest provenance make the open web easier to use.",
+      "content_text": "Discovery is durable when a reader can understand what a page is, where it came from, and whether it is still current without depending on one interface. That starts with stable canonical URLs and honest dates. A publication date describes when an idea first became public. A content update describes an editorial change. Repository activity, when it exists, is useful context but should not silently rewrite either of those facts. The same record can then support an HTML page, a concise Markdown alternate, a feed item, and a machine-readable index. Each representation should point back to the same canonical resource and carry the same title, summary, author, and freshness information. Good metadata is not decoration. It is the connective tissue that lets browsers, readers, search engines, and future tools discover the same work without guessing.",
+      "date_published": "2026-04-12T00:00:00.000Z",
+      "date_modified": "2026-04-18T00:00:00.000Z",
+      "language": "en",
+      "authors": [
+        {
+          "name": "Your Name",
+          "url": "https://example.com/about"
+        }
+      ],
+      "tags": [
+        "Information architecture",
+        "Web publishing",
+        "Metadata"
+      ]
+    },
+    {
+      "id": "https://example.com/writing/a-slower-better-publishing-loop",
+      "url": "https://example.com/writing/a-slower-better-publishing-loop",
+      "title": "A slower, better publishing loop",
+      "summary": "A practical rhythm for drafting, checking sources, and updating work without losing context.",
+      "content_text": "A publishing habit becomes easier to sustain when it has fewer hidden decisions. Capture the idea, shape one useful claim, review it in context, and publish it in formats that can be checked together. The slower loop is not an argument for polishing forever. It is a way to separate drafting from distribution. Drafts can be incomplete and private. Published work should have a stable address, a clear summary, and dates that say what actually changed. Once those boundaries are explicit, automation can do the repetitive work. A single catalog can produce feeds, indexes, sitemaps, and Markdown alternates while tests check that every representation agrees. The result is a quieter system: fewer rushed posts, fewer stale copies, and more confidence that each published note will still make sense when someone discovers it later.",
+      "date_published": "2026-03-03T00:00:00.000Z",
+      "date_modified": "2026-03-03T00:00:00.000Z",
+      "language": "en",
+      "authors": [
+        {
+          "name": "Your Name",
+          "url": "https://example.com/about"
+        }
+      ],
+      "tags": [
+        "Writing practice",
+        "Editorial systems",
+        "Sustainable pace"
+      ]
+    }
+  ]
+}

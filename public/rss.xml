@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Your Name — Projects and Writing</title>
+    <link>https://example.com</link>
+    <description>A small, durable collection of practical projects and writing about thoughtful software.</description>
+    <language>en</language>
+    <atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Designing for durable discovery</title>
+      <link>https://example.com/writing/designing-for-durable-discovery</link>
+      <guid isPermaLink="true">https://example.com/writing/designing-for-durable-discovery</guid>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:date>2026-04-18</dc:date>
+      <dc:creator>Your Name</dc:creator>
+      <dc:rights>CC BY 4.0 (article text)</dc:rights>
+      <category>Information architecture</category>
+      <category>Web publishing</category>
+      <category>Metadata</category>
+      <description>Why canonical URLs, structured metadata, plain-text alternatives, and honest provenance make the open web easier to use.</description>
+      <content:encoded><![CDATA[<p>Discovery is durable when a reader can understand what a page is, where it came from, and whether it is still current without depending on one interface.</p><p>That starts with stable canonical URLs and honest dates. A publication date describes when an idea first became public. A content update describes an editorial change. Repository activity, when it exists, is useful context but should not silently rewrite either of those facts.</p><p>The same record can then support an HTML page, a concise Markdown alternate, a feed item, and a machine-readable index. Each representation should point back to the same canonical resource and carry the same title, summary, author, and freshness information.</p><p>Good metadata is not decoration. It is the connective tissue that lets browsers, readers, search engines, and future tools discover the same work without guessing.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A slower, better publishing loop</title>
+      <link>https://example.com/writing/a-slower-better-publishing-loop</link>
+      <guid isPermaLink="true">https://example.com/writing/a-slower-better-publishing-loop</guid>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
+      <dc:date>2026-03-03</dc:date>
+      <dc:creator>Your Name</dc:creator>
+      <category>Writing practice</category>
+      <category>Editorial systems</category>
+      <category>Sustainable pace</category>
+      <description>A practical rhythm for drafting, checking sources, and updating work without losing context.</description>
+      <content:encoded><![CDATA[<p>A publishing habit becomes easier to sustain when it has fewer hidden decisions. Capture the idea, shape one useful claim, review it in context, and publish it in formats that can be checked together.</p><p>The slower loop is not an argument for polishing forever. It is a way to separate drafting from distribution. Drafts can be incomplete and private. Published work should have a stable address, a clear summary, and dates that say what actually changed.</p><p>Once those boundaries are explicit, automation can do the repetitive work. A single catalog can produce feeds, indexes, sitemaps, and Markdown alternates while tests check that every representation agrees.</p><p>The result is a quieter system: fewer rushed posts, fewer stale copies, and more confidence that each published note will still make sense when someone discovers it later.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

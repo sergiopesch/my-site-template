@@ -1,57 +1,27 @@
-# Agent-ready personal site template
+# Agent-ready personal site
 
-A fast, accessible Next.js template for publishing projects and writing for people, search engines, LLMs, and web agents.
+A reusable version of the same editorial design used on [sergiopesch.com](https://www.sergiopesch.com), filled with neutral placeholder content and links. It is fast, accessible, responsive, and ready for people, search engines, LLMs, and web agents.
 
-[View the live demo](https://agent-ready-site-template.vercel.app) · [Use this template](https://github.com/sergiopesch/my-site-template/generate)
+[Live demo](https://agent-ready-site-template.vercel.app) · [Use this template](https://github.com/sergiopesch/my-site-template/generate)
 
-![Desktop preview of the template homepage with featured project and recent writing](docs/template-preview.jpg)
+![The neutral personal site template with an editorial introduction and featured project](docs/template-preview.jpg)
 
-## What you get
+## Start here
 
-- Static project and writing pages built from validated Markdown
-- Canonical URLs, aliases, Open Graph metadata, and JSON-LD
-- Markdown alternates, RSS, JSON Feed, sitemap, `llms.txt`, and a content index
-- Accessible responsive layouts, dark mode, and secure response headers
-- Draft and private repository protection across every public output
-- Unit, browser, accessibility, metadata, and machine-output tests
-
-This is a publishing foundation, not a chatbot or agent runtime. It needs no database, model dependency, analytics service, or request-time content fetch.
-
-## Quick start
-
-1. Select **Use this template** on GitHub and clone your new repository.
-2. Use Node 22 and install the locked dependencies.
-
-   ```bash
-   nvm use
-   npm ci
-   ```
-
-3. Edit [`config/site.ts`](config/site.ts) with your identity, links, language, and production URL.
+1. Select **Use this template** on GitHub.
+2. Use Node 22 and run `npm ci`.
+3. Replace the identity and links in [`config/site.ts`](config/site.ts).
 4. Replace the examples in `content/projects` and `content/posts`.
-5. Generate, validate, and start the site.
+5. Run `npm run check`, then `npm run test:e2e`.
 
-   ```bash
-   npm run generate:machine
-   npm run check
-   npm run test:e2e
-   npm run dev
-   ```
+## Included
 
-## Publishing outputs
+- Projects, thoughts, About, light mode, and dark mode
+- Validated Markdown content and responsive project images
+- Canonical URLs, JSON-LD, Markdown alternates, RSS, JSON Feed, sitemap, `llms.txt`, and a content index
+- Draft and private repository protection
+- Accessibility, metadata, security, browser, and machine-output tests
 
-All human and machine-readable formats come from the same validated content catalog:
+Set `NEXT_PUBLIC_SITE_URL` to the production origin before deployment. Generated files in `public/` come from the content catalog; update them with `npm run generate:machine` instead of editing them by hand.
 
-- `/projects/:slug` and `/writing/:slug`
-- `/projects/:slug.md` and `/writing/:slug.md`
-- `/llms.txt` and `/llms-full.txt`
-- `/content-index.json`, `/feed.json`, and `/rss.xml`
-- `/sitemap.xml` and `/robots.txt`
-
-Do not edit generated files in `public/` by hand. Run `npm run generate:machine` after content changes.
-
-## Deploy
-
-Set `NEXT_PUBLIC_SITE_URL` to your stable production origin. Vercel can deploy the repository directly using the included configuration; other Node hosts can run `npm ci`, `npm run build`, and `npm run start`.
-
-See [SECURITY.md](SECURITY.md) for security reporting and [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance. The template code is available under the [MIT License](LICENSE).
+MIT licensed. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) for project guidance.

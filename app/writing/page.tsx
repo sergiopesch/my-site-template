@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 
-import { ContentRow } from "@/components/content-row";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+
+import { EditorialHeader } from "@/components/editorial-header";
 import { siteConfig } from "@/config/site";
 import { getWriting } from "@/lib/catalog";
-import { formatShortDate, readingMinutes } from "@/lib/presentation";
+import { formatDate } from "@/lib/presentation";
 
 export const metadata: Metadata = {
-  title: "Writing",
+  title: "Thoughts",
   description: "Notes on building, learning, and making information last.",
   alternates: { canonical: siteConfig.absoluteUrl("/writing") },
 };
@@ -15,23 +18,25 @@ export default function WritingPage() {
   const writing = getWriting();
 
   return (
-    <>
-      <header className="page-intro">
-        <h1 className="page-heading">Writing</h1>
-        <p>Notes on building, learning, and making information last.</p>
-      </header>
-      <section className="content-list" aria-label="Writing">
+    <div className="site-shell--narrow site-page page-enter">
+      <section className="archive-intro archive-intro--thoughts">
+        <EditorialHeader
+          deck="Notes, thoughts, and field observations."
+          variant="thought"
+          align="center"
+        />
+      </section>
+      <section className="thought-list" aria-label="Thoughts">
         {writing.map((entry) => (
-          <ContentRow
-            key={entry.url}
-            href={entry.route}
-            title={entry.title}
-            summary={entry.summary}
-            metadata={`${formatShortDate(entry.datePublished)} · ${readingMinutes(entry.body)} min read`}
-            actionLabel="Read article"
-          />
+          <Link className="thought-list__item" href={entry.route} key={entry.url}>
+            <time dateTime={entry.datePublished}>{formatDate(entry.datePublished)}</time>
+            <span className="thought-list__title">
+              <span>{entry.title}</span>
+              <ArrowUpRight aria-hidden="true" />
+            </span>
+          </Link>
         ))}
       </section>
-    </>
+    </div>
   );
 }

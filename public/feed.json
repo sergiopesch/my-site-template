@@ -1,9 +1,9 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "Your Name — Projects and Writing",
+  "title": "Your Name — Projects and Thoughts",
   "home_page_url": "https://example.com",
   "feed_url": "https://example.com/feed.json",
-  "description": "A small, durable collection of practical projects and writing about thoughtful software.",
+  "description": "A personal digital garden for projects, ideas, notes, and thoughtful experiments.",
   "language": "en",
   "authors": [
     {
@@ -12,6 +12,27 @@
     }
   ],
   "items": [
+    {
+      "id": "https://example.com/writing/keeping-decisions-visible",
+      "url": "https://example.com/writing/keeping-decisions-visible",
+      "title": "Keeping decisions visible",
+      "summary": "A short note on documenting the reason behind a choice so future collaborators can understand it.",
+      "content_text": "A useful decision record does not need to be long. It needs to preserve the context, the options that were considered, and the reason one direction won. Write the note close to the moment of the decision, then link it from the project where people will naturally look for it. A stable address and a clear date are often more valuable than a perfect format. For a simple starting point, see the Architecture Decision Records guide. Replace this example with a source that supports your own thought.",
+      "date_published": "2026-05-26T00:00:00.000Z",
+      "date_modified": "2026-05-26T00:00:00.000Z",
+      "language": "en",
+      "authors": [
+        {
+          "name": "Your Name",
+          "url": "https://example.com/about"
+        }
+      ],
+      "tags": [
+        "Collaboration",
+        "Documentation",
+        "Decision making"
+      ]
+    },
     {
       "id": "https://example.com/writing/designing-for-durable-discovery",
       "url": "https://example.com/writing/designing-for-durable-discovery",
@@ -52,6 +73,27 @@
         "Writing practice",
         "Editorial systems",
         "Sustainable pace"
+      ]
+    },
+    {
+      "id": "https://example.com/writing/better-project-handoffs",
+      "url": "https://example.com/writing/better-project-handoffs",
+      "title": "A practical note on better project handoffs",
+      "summary": "What to leave behind so another person can understand a project, run it, and make a careful change.",
+      "content_text": "A handoff works when the next person can answer three questions: what is this for, how do I run it, and what should I be careful not to break? The most helpful document is usually short. Link to the important environment, explain the publishing path, name the checks that matter, and record any constraint that would otherwise be invisible. Keep that guidance beside the code and verify it from a clean setup. The README guidance from GitHub is a useful baseline.",
+      "date_published": "2025-12-04T00:00:00.000Z",
+      "date_modified": "2025-12-12T00:00:00.000Z",
+      "language": "en",
+      "authors": [
+        {
+          "name": "Your Name",
+          "url": "https://example.com/about"
+        }
+      ],
+      "tags": [
+        "Maintenance",
+        "Documentation",
+        "Teamwork"
       ]
     }
   ]

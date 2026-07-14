@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   colorScheme: "light dark",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0c0d10" },
+    { media: "(prefers-color-scheme: light)", color: "#fcfaf8" },
+    { media: "(prefers-color-scheme: dark)", color: "#12151c" },
   ],
 };
 
@@ -51,11 +51,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>
-        <div className="site-frame">
-          <SiteHeader name={siteConfig.name} />
-          <main id="main-content">{children}</main>
-          <SiteFooter />
-        </div>
+        <SiteHeader name={siteConfig.name} />
+        <main id="main-content">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

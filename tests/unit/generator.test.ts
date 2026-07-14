@@ -36,14 +36,14 @@ test("drafts and private repository URLs are absent from every public surface", 
 
   const index = JSON.parse(artifacts["content-index.json"]);
   const project = index.items.find(
-    (item: { slug: string }) => item.slug === "local-first-field-notes",
+    (item: { slug: string }) => item.slug === "small-tools-collection",
   );
   assert.deepEqual(Object.keys(project.repository).sort(), ["created", "updated", "visibility"]);
   assert.equal(project.repository.visibility, "private");
 
   const privateUrl = "https://example.com/never-publish-this-private-repository";
   const poisonedEntries = entries.map((entry) =>
-    entry.slug === "local-first-field-notes"
+    entry.slug === "small-tools-collection"
       ? {
           ...entry,
           repository: { ...entry.repository, url: privateUrl } as typeof entry.repository,
@@ -61,9 +61,14 @@ test("feeds contain writing only while discovery surfaces contain every entry", 
 
   assert.deepEqual(
     feed.items.map((item: { title: string }) => item.title),
-    ["Designing for durable discovery", "A slower, better publishing loop"],
+    [
+      "Keeping decisions visible",
+      "Designing for durable discovery",
+      "A slower, better publishing loop",
+      "A practical note on better project handoffs",
+    ],
   );
-  assert.equal(artifacts["rss.xml"].includes("Local First Field Notes"), false);
+  assert.equal(artifacts["rss.xml"].includes("Personal Site Foundation"), false);
   assert.equal(index.items.length, entries.length);
   assert.match(artifacts["sitemap.xml"], /<loc>https:\/\/example\.com\/contact<\/loc>/);
   assert.ok(artifacts["llms.txt"].indexOf("## Key pages") < artifacts["llms.txt"].indexOf("## Projects"));

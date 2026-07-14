@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -29,25 +30,11 @@ function headingId(children: ReactNode) {
 const components: Components = {
   h2: ({ children }) => {
     const id = headingId(children);
-    return (
-      <h2 id={id}>
-        {children}
-        <a className="heading-anchor" href={`#${id}`} aria-label="Link to this section">
-          #
-        </a>
-      </h2>
-    );
+    return <h2 id={id}>{children}</h2>;
   },
   h3: ({ children }) => {
     const id = headingId(children);
-    return (
-      <h3 id={id}>
-        {children}
-        <a className="heading-anchor" href={`#${id}`} aria-label="Link to this section">
-          #
-        </a>
-      </h3>
-    );
+    return <h3 id={id}>{children}</h3>;
   },
   a: ({ href = "", children }) => {
     const external = /^https:\/\//.test(href);
@@ -61,11 +48,26 @@ const components: Components = {
       </a>
     );
   },
+  img: ({ src = "", alt = "" }) => {
+    if (typeof src !== "string") return null;
+
+    return (
+      <span className="markdown-image">
+        <Image
+          src={src}
+          alt={alt}
+          width={1200}
+          height={750}
+          sizes="(max-width: 768px) 100vw, 800px"
+        />
+      </span>
+    );
+  },
 };
 
 export function MarkdownBody({ markdown }: { markdown: string }) {
   return (
-    <div className="markdown-body">
+    <div className="editorial-prose">
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
         {markdown}
       </ReactMarkdown>

@@ -3,7 +3,7 @@
   "site": {
     "name": "Your Name",
     "url": "https://example.com",
-    "description": "A small, durable collection of practical projects and writing about thoughtful software.",
+    "description": "A personal digital garden for projects, ideas, notes, and thoughtful experiments.",
     "language": "en",
     "author": {
       "name": "Your Name",
@@ -12,6 +12,140 @@
     }
   },
   "items": [
+    {
+      "id": "https://example.com/projects/personal-site-foundation",
+      "kind": "project",
+      "slug": "personal-site-foundation",
+      "title": "Personal Site Foundation",
+      "summary": "A polished personal site for sharing projects, notes, and an evolving body of work with people and discovery tools.",
+      "url": "https://example.com/projects/personal-site-foundation",
+      "aliases": [
+        "https://example.com/projects/site-foundation"
+      ],
+      "markdown_url": "https://example.com/projects/personal-site-foundation.md",
+      "markdown_sha256": "909d4bca692aad5203cbafa0e5fd6e9f870e10d9555800d8e0d21cb5a063f499",
+      "date_published": "2026-06-10",
+      "date_modified": "2026-07-14",
+      "content_updated": "2026-07-14",
+      "language": "en",
+      "topics": [
+        "Personal publishing",
+        "Web design",
+        "Open web"
+      ],
+      "repository": {
+        "visibility": "public",
+        "url": "https://github.com/your-username/personal-site",
+        "created": "2026-06-10",
+        "updated": "2026-07-14"
+      },
+      "repository_created": "2026-06-10",
+      "repository_updated": "2026-07-14",
+      "demo_url": "https://example.com",
+      "image": "https://example.com/images/personal-site-foundation.jpg",
+      "image_alt": "Neutral personal site template homepage with an editorial introduction and featured project card",
+      "sources": [
+        {
+          "title": "Next.js documentation",
+          "url": "https://nextjs.org/docs"
+        }
+      ],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/projects/personal-site-foundation",
+        "content_updated": "2026-07-14"
+      },
+      "content_text": "This project is a placeholder for the story behind your personal site. Introduce the problem you wanted to solve, the audience you designed for, and the idea that guided the work. The idea The foundation keeps human-readable pages and machine-readable publications in agreement. Projects and thoughts begin as validated Markdown, then become accessible web pages, stable Markdown alternates, feeds, metadata, and a structured content index. Use this section to explain the choices that matter. You might link to the live project, the public repository, or a useful technical reference. A strong project post gives readers enough context to understand the work without requiring them to inspect the code. What it includes A responsive editorial interface with light and dark themes Project and thought archives generated from one content catalog Canonical URLs, JSON-LD, feeds, Markdown alternates, and discovery files Tests for accessibility, privacy, metadata, navigation, and generated outputs What comes next End with a short reflection or the next improvement you want to explore. Replace every placeholder with your own voice, links, images, and evidence before publishing."
+    },
+    {
+      "id": "https://example.com/writing/keeping-decisions-visible",
+      "kind": "post",
+      "slug": "keeping-decisions-visible",
+      "title": "Keeping decisions visible",
+      "summary": "A short note on documenting the reason behind a choice so future collaborators can understand it.",
+      "url": "https://example.com/writing/keeping-decisions-visible",
+      "aliases": [],
+      "markdown_url": "https://example.com/writing/keeping-decisions-visible.md",
+      "markdown_sha256": "db18ae367f360f43eb8684924501e4aa5992e1cdb11a2b19fe8db70e124b4e2f",
+      "date_published": "2026-05-26",
+      "date_modified": "2026-05-26",
+      "content_updated": "2026-05-26",
+      "language": "en",
+      "topics": [
+        "Collaboration",
+        "Documentation",
+        "Decision making"
+      ],
+      "repository": null,
+      "repository_created": null,
+      "repository_updated": null,
+      "demo_url": null,
+      "image": null,
+      "image_alt": null,
+      "sources": [],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/writing/keeping-decisions-visible",
+        "content_updated": "2026-05-26"
+      },
+      "content_text": "A useful decision record does not need to be long. It needs to preserve the context, the options that were considered, and the reason one direction won. Write the note close to the moment of the decision, then link it from the project where people will naturally look for it. A stable address and a clear date are often more valuable than a perfect format. For a simple starting point, see the Architecture Decision Records guide. Replace this example with a source that supports your own thought."
+    },
+    {
+      "id": "https://example.com/projects/neighborhood-field-guide",
+      "kind": "project",
+      "slug": "neighborhood-field-guide",
+      "title": "Neighborhood Field Guide",
+      "summary": "A calm, map-led guide that helps people save favorite places and share useful local recommendations.",
+      "url": "https://example.com/projects/neighborhood-field-guide",
+      "aliases": [],
+      "markdown_url": "https://example.com/projects/neighborhood-field-guide.md",
+      "markdown_sha256": "15ed2870790585c2a3368eb407ff72dad11077cace649167a43a35c9cd0a791b",
+      "date_published": "2026-04-22",
+      "date_modified": "2026-05-18",
+      "content_updated": "2026-05-18",
+      "language": "en",
+      "topics": [
+        "Product design",
+        "Local discovery",
+        "Maps"
+      ],
+      "repository": {
+        "visibility": "public",
+        "url": "https://github.com/your-username/neighborhood-field-guide",
+        "created": "2026-04-22",
+        "updated": "2026-05-18"
+      },
+      "repository_created": "2026-04-22",
+      "repository_updated": "2026-05-18",
+      "demo_url": "https://example.com/projects/neighborhood-field-guide",
+      "image": "https://example.com/images/neighborhood-field-guide.jpg",
+      "image_alt": "Projects archive from the neutral template arranged as a responsive grid of editorial cards",
+      "sources": [],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/projects/neighborhood-field-guide",
+        "content_updated": "2026-05-18"
+      },
+      "content_text": "Neighborhood Field Guide is placeholder content for a product or community project. Use the opening paragraph to say what you made and why it should exist. Designing the experience Describe the main journey in plain language. A visitor can browse a neighborhood, save a place, and send a short list to a friend without creating an account first. The interface favors legible information, clear provenance, and lightweight interactions. Add a link to a working prototype or your design notes when those materials are ready. A useful outcome Explain what changed because of the project. Real outcomes, constraints, and lessons make a case study more useful than a list of features."
+    },
     {
       "id": "https://example.com/writing/designing-for-durable-discovery",
       "kind": "post",
@@ -37,6 +171,8 @@
       "repository_created": null,
       "repository_updated": null,
       "demo_url": null,
+      "image": null,
+      "image_alt": null,
       "sources": [
         {
           "title": "Cool URIs don't change",
@@ -86,6 +222,8 @@
       "repository_created": null,
       "repository_updated": null,
       "demo_url": null,
+      "image": null,
+      "image_alt": null,
       "sources": [],
       "license": null,
       "provenance": {
@@ -101,40 +239,35 @@
       "content_text": "A publishing habit becomes easier to sustain when it has fewer hidden decisions. Capture the idea, shape one useful claim, review it in context, and publish it in formats that can be checked together. The slower loop is not an argument for polishing forever. It is a way to separate drafting from distribution. Drafts can be incomplete and private. Published work should have a stable address, a clear summary, and dates that say what actually changed. Once those boundaries are explicit, automation can do the repetitive work. A single catalog can produce feeds, indexes, sitemaps, and Markdown alternates while tests check that every representation agrees. The result is a quieter system: fewer rushed posts, fewer stale copies, and more confidence that each published note will still make sense when someone discovers it later."
     },
     {
-      "id": "https://example.com/projects/local-first-field-notes",
+      "id": "https://example.com/projects/small-tools-collection",
       "kind": "project",
-      "slug": "local-first-field-notes",
-      "title": "Local First Field Notes",
-      "summary": "A small offline-first notebook for collecting observations without sending personal data to a server.",
-      "url": "https://example.com/projects/local-first-field-notes",
-      "aliases": [
-        "https://example.com/projects/field-notes"
-      ],
-      "markdown_url": "https://example.com/projects/local-first-field-notes.md",
-      "markdown_sha256": "587e2fa50a7a7181be44c252da251a43e9091078f23b8e777f880a83af76758c",
-      "date_published": "2025-01-18",
-      "date_modified": "2025-03-04",
-      "content_updated": "2025-03-04",
+      "slug": "small-tools-collection",
+      "title": "Small Tools Collection",
+      "summary": "A private workbench of focused utilities that remove repetitive steps from everyday creative work.",
+      "url": "https://example.com/projects/small-tools-collection",
+      "aliases": [],
+      "markdown_url": "https://example.com/projects/small-tools-collection.md",
+      "markdown_sha256": "32ab14ebdd0245f70d93368f60c69c34b6996005a2d99e7a84daee09f7a4602d",
+      "date_published": "2026-02-08",
+      "date_modified": "2026-03-01",
+      "content_updated": "2026-03-01",
       "language": "en",
       "topics": [
-        "Local-first software",
-        "Offline workflows",
-        "Product design"
+        "Developer tools",
+        "Automation",
+        "Prototyping"
       ],
       "repository": {
         "visibility": "private",
-        "created": "2024-11-12",
-        "updated": "2025-02-27"
+        "created": "2026-02-08",
+        "updated": "2026-03-01"
       },
-      "repository_created": "2024-11-12",
-      "repository_updated": "2025-02-27",
-      "demo_url": null,
-      "sources": [
-        {
-          "title": "Local-first software",
-          "url": "https://www.inkandswitch.com/local-first/"
-        }
-      ],
+      "repository_created": "2026-02-08",
+      "repository_updated": "2026-03-01",
+      "demo_url": "https://example.com/projects/small-tools-collection",
+      "image": "https://example.com/images/small-tools-collection.jpg",
+      "image_alt": "Thoughts archive in the neutral personal site template with dated editorial links",
+      "sources": [],
       "license": null,
       "provenance": {
         "kind": "first_party",
@@ -143,10 +276,93 @@
           "email": "hello@example.com",
           "url": "https://example.com/about"
         },
-        "canonical_url": "https://example.com/projects/local-first-field-notes",
-        "content_updated": "2025-03-04"
+        "canonical_url": "https://example.com/projects/small-tools-collection",
+        "content_updated": "2026-03-01"
       },
-      "content_text": "Local First Field Notes explores a simple idea: useful notes should not depend on a network connection or an account being available at the moment of capture. The prototype keeps writing on the device first, makes sync state visible, and treats publishing as a separate editorial action. A note can remain private, move between devices, or become a small public document without changing the original record. The visual system borrows from field journals: generous margins, quiet status labels, and a clear distinction between an observation, its revision history, and the version eventually shared."
+      "content_text": "This placeholder demonstrates how to publish a project even when its repository must remain private. The public page can explain the purpose and results without exposing a private code URL. Keep the scope small Each utility should do one job clearly. Describe the repeated task, the smallest useful intervention, and how you know the tool improved the workflow. When the code cannot be shared, link to a public demonstration or a related write-up instead. Protect what is private Private repository metadata is deliberately excluded from public URLs, page metadata, feeds, and discovery outputs. The test suite verifies that boundary on every build."
+    },
+    {
+      "id": "https://example.com/writing/better-project-handoffs",
+      "kind": "post",
+      "slug": "better-project-handoffs",
+      "title": "A practical note on better project handoffs",
+      "summary": "What to leave behind so another person can understand a project, run it, and make a careful change.",
+      "url": "https://example.com/writing/better-project-handoffs",
+      "aliases": [],
+      "markdown_url": "https://example.com/writing/better-project-handoffs.md",
+      "markdown_sha256": "f14e93120a25d1fa5c61bd4d329b774124520a18bf5d4414cbefd71bc3cf6c39",
+      "date_published": "2025-12-04",
+      "date_modified": "2025-12-12",
+      "content_updated": "2025-12-12",
+      "language": "en",
+      "topics": [
+        "Maintenance",
+        "Documentation",
+        "Teamwork"
+      ],
+      "repository": null,
+      "repository_created": null,
+      "repository_updated": null,
+      "demo_url": null,
+      "image": null,
+      "image_alt": null,
+      "sources": [],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/writing/better-project-handoffs",
+        "content_updated": "2025-12-12"
+      },
+      "content_text": "A handoff works when the next person can answer three questions: what is this for, how do I run it, and what should I be careful not to break? The most helpful document is usually short. Link to the important environment, explain the publishing path, name the checks that matter, and record any constraint that would otherwise be invisible. Keep that guidance beside the code and verify it from a clean setup. The README guidance from GitHub is a useful baseline."
+    },
+    {
+      "id": "https://example.com/projects/reading-room",
+      "kind": "project",
+      "slug": "reading-room",
+      "title": "Reading Room",
+      "summary": "A minimal reading list that keeps sources, annotations, and durable links together without becoming a social feed.",
+      "url": "https://example.com/projects/reading-room",
+      "aliases": [],
+      "markdown_url": "https://example.com/projects/reading-room.md",
+      "markdown_sha256": "c98d4411b72b17756d2d75c792a85cb88f0dbfc1f53645b555654019910c348b",
+      "date_published": "2025-10-16",
+      "date_modified": "2026-01-12",
+      "content_updated": "2026-01-12",
+      "language": "en",
+      "topics": [
+        "Reading",
+        "Knowledge tools",
+        "Information design"
+      ],
+      "repository": {
+        "visibility": "public",
+        "url": "https://github.com/your-username/reading-room",
+        "created": "2025-10-16",
+        "updated": "2026-01-12"
+      },
+      "repository_created": "2025-10-16",
+      "repository_updated": "2026-01-12",
+      "demo_url": null,
+      "image": "https://example.com/images/reading-room.jpg",
+      "image_alt": "About page in the neutral template with balanced editorial text and social profile links",
+      "sources": [],
+      "license": null,
+      "provenance": {
+        "kind": "first_party",
+        "author": {
+          "name": "Your Name",
+          "email": "hello@example.com",
+          "url": "https://example.com/about"
+        },
+        "canonical_url": "https://example.com/projects/reading-room",
+        "content_updated": "2026-01-12"
+      },
+      "content_text": "Reading Room is a placeholder for a quieter, content-led project. Start with the human need, then show how the design supports it. Sources remain visible Every saved item keeps its original title, canonical address, and a short note about why it matters. That makes the collection useful to the person who created it and understandable to someone discovering it later. Add links to a source collection and a project repository when you replace this example. Design for return visits The best personal tools become more valuable over time. Use this final section to describe how the project changed after real use and what you would improve next."
     }
   ]
 }

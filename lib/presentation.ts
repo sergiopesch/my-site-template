@@ -16,6 +16,14 @@ export function formatShortDate(value: string) {
   }).format(new Date(`${value}T00:00:00.000Z`));
 }
 
+export function formatMonthYear(value: string) {
+  return new Intl.DateTimeFormat("en", {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${value}T00:00:00.000Z`));
+}
+
 export function stripAgentQuickStart(body: string) {
   return body
     .replace(/\r\n?/g, "\n")

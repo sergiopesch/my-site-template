@@ -24,7 +24,7 @@ test("machine publications are available, consistent, and private-safe", async (
     "/content-index.json",
     "/llms.txt",
     "/llms-full.txt",
-    "/projects/local-first-field-notes.md",
+    "/projects/personal-site-foundation.md",
     "/writing/designing-for-durable-discovery.md",
   ];
 
@@ -36,22 +36,22 @@ test("machine publications are available, consistent, and private-safe", async (
   const indexResponse = await request.get("/content-index.json");
   const index = await indexResponse.json();
   const project = index.items.find(
-    (entry: { slug: string }) => entry.slug === "local-first-field-notes"
+    (entry: { slug: string }) => entry.slug === "small-tools-collection"
   );
 
   expect(index.schema_version).toBe("1.2");
-  expect(index.items).toHaveLength(3);
+  expect(index.items).toHaveLength(8);
   expect(project.repository).toEqual({
     visibility: "private",
-    created: "2024-11-12",
-    updated: "2025-02-27",
+    created: "2026-02-08",
+    updated: "2026-03-01",
   });
   expect(JSON.stringify(index)).not.toContain(privateDraftTitle);
   expect(JSON.stringify(project.repository)).not.toContain("url");
   expect(project.markdown_sha256).toMatch(/^[a-f0-9]{64}$/);
 
   const feed = await (await request.get("/feed.json")).json();
-  expect(feed.items).toHaveLength(2);
+  expect(feed.items).toHaveLength(4);
   expect(feed.items.every((item: { url: string }) => item.url.includes("/writing/"))).toBe(true);
 });
 
@@ -63,9 +63,11 @@ test("home and content routes render canonical, accessible publication UI", asyn
 
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "A clear home for your work and ideas."
+    "Welcome to my digital garden. A space to share projects, ideas, and notes."
   );
-  await expect(page.getByRole("link", { name: "View projects" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Personal Site Foundation" })
+  ).toBeVisible();
   await expect(page.getByText(privateDraftTitle)).toHaveCount(0);
 
   if (testInfo.project.name === "chromium") {
@@ -119,10 +121,12 @@ test("navigation works when JavaScript is disabled", async ({ page }, testInfo) 
   await page.goto("/");
   await page
     .getByRole("navigation", { name: "Primary navigation" })
-    .getByRole("link", { name: "Writing", exact: true })
+    .getByRole("link", { name: "Thoughts", exact: true })
     .click();
   await expect(page).toHaveURL(/\/writing$/);
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Writing");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Notes, thoughts, and field observations."
+  );
 });
 
 test("theme preference changes through the isolated client control", async ({ page }, testInfo) => {
@@ -130,10 +134,24 @@ test("theme preference changes through the isolated client control", async ({ pa
 
   await page.goto("/");
   const initialTheme = await page.locator("html").getAttribute("data-theme");
-  await page.getByRole("button", { name: "Toggle color theme" }).click();
+  await page.getByRole("button", { name: "Toggle Dark Mode" }).click();
   const changedTheme = await page.locator("html").getAttribute("data-theme");
 
   expect(changedTheme).not.toBe(initialTheme);
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", changedTheme!);
+});
+
+test("the visual foundation stays responsive and makes every hyperlink bold and italic", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/projects/personal-site-foundation");
+
+  const internalWidth = await page.evaluate(() => document.documentElement.scrollWidth);
+  expect(internalWidth).toBeLessThanOrEqual(390);
+
+  const link = page.getByRole("link", { name: "live project" });
+  await expect(link).toBeVisible();
+  await expect(link).toHaveCSS("font-weight", "700");
+  await expect(link).toHaveCSS("font-style", "italic");
+  await expect(page.getByAltText(/neutral personal site homepage/i)).toBeVisible();
 });

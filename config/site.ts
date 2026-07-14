@@ -37,17 +37,29 @@ function absoluteUrl(value = "/"): string {
  */
 export const siteConfig = Object.freeze({
   name: "Your Name",
-  title: "Your Name — Projects and Writing",
+  title: "Your Name — Projects and Thoughts",
   description:
-    "A small, durable collection of practical projects and writing about thoughtful software.",
+    "A personal digital garden for projects, ideas, notes, and thoughtful experiments.",
   url: SITE_URL,
   email: "hello@example.com",
   language: "en",
+  introduction:
+    "Welcome to my digital garden. A space to share projects, ideas, and notes.",
   author: Object.freeze({
     name: "Your Name",
     email: "hello@example.com",
     url: `${SITE_URL}/about`,
   }),
+  social: Object.freeze({
+    x: "https://x.com/your-handle",
+    github: "https://github.com/your-username",
+    linkedin: "https://www.linkedin.com/in/your-name",
+  }),
+  about: Object.freeze([
+    "My name is Your Name. I build useful things, document what I learn, and share work that may help other people.",
+    "Outside of work, I make time for the people and interests that keep me curious. Replace this paragraph with the personal context you want readers to know.",
+    "I use this site to explore ideas, publish experiments, and keep a durable record of projects as they evolve. Replace this paragraph with your own goals and point of view.",
+  ]),
   routes: Object.freeze({
     about: "/about",
     contact: "/contact",

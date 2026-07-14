@@ -44,7 +44,7 @@ test("JSON-LD serialization cannot terminate its script element", () => {
 });
 
 test("private project JSON-LD never emits codeRepository", () => {
-  const entry = getEntry("project", "local-first-field-notes");
+  const entry = getEntry("project", "small-tools-collection");
   assert.ok(entry);
   const graph = buildEntryJsonLd(entry)["@graph"];
   const project = graph.find((item) => item["@id"] === `${entry.url}#work`);

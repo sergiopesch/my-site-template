@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
-import { ContentRow } from "@/components/content-row";
+import { EditorialHeader } from "@/components/editorial-header";
+import { ProjectCard } from "@/components/project-card";
 import { siteConfig } from "@/config/site";
 import { getProjects } from "@/lib/catalog";
-import { formatShortDate } from "@/lib/presentation";
+import { formatMonthYear } from "@/lib/presentation";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -15,23 +16,23 @@ export default function ProjectsPage() {
   const projects = getProjects();
 
   return (
-    <>
-      <header className="page-intro">
-        <h1 className="page-heading">Projects</h1>
-        <p>Selected projects, experiments, and practical work.</p>
-      </header>
-      <section className="content-list" aria-label="Projects">
+    <div className="site-shell site-page page-enter">
+      <section className="archive-intro">
+        <EditorialHeader
+          deck="A running archive of experiments, ideas, and practical work."
+          variant="project"
+          align="center"
+        />
+      </section>
+      <section className="project-grid" aria-label="Projects">
         {projects.map((project) => (
-          <ContentRow
+          <ProjectCard
             key={project.url}
-            href={project.route}
-            title={project.title}
-            summary={project.summary}
-            metadata={`Started ${formatShortDate(project.datePublished)}`}
-            actionLabel="View project"
+            project={project}
+            eyebrow={`${project.repositoryCreated ? "Created" : "Started"} ${formatMonthYear(project.repositoryCreated ?? project.datePublished)}`}
           />
         ))}
       </section>
-    </>
+    </div>
   );
 }

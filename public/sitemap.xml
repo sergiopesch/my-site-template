@@ -2,21 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://example.com</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-07-14</lastmod>
   </url>
   <url>
     <loc>https://example.com/about</loc>
   </url>
   <url>
     <loc>https://example.com/projects</loc>
-    <lastmod>2025-03-04</lastmod>
+    <lastmod>2026-07-14</lastmod>
   </url>
   <url>
     <loc>https://example.com/writing</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-05-26</lastmod>
   </url>
   <url>
     <loc>https://example.com/contact</loc>
+  </url>
+  <url>
+    <loc>https://example.com/projects/personal-site-foundation</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/writing/keeping-decisions-visible</loc>
+    <lastmod>2026-05-26</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/projects/neighborhood-field-guide</loc>
+    <lastmod>2026-05-18</lastmod>
   </url>
   <url>
     <loc>https://example.com/writing/designing-for-durable-discovery</loc>
@@ -27,7 +39,15 @@
     <lastmod>2026-03-03</lastmod>
   </url>
   <url>
-    <loc>https://example.com/projects/local-first-field-notes</loc>
-    <lastmod>2025-03-04</lastmod>
+    <loc>https://example.com/projects/small-tools-collection</loc>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/writing/better-project-handoffs</loc>
+    <lastmod>2025-12-12</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/projects/reading-room</loc>
+    <lastmod>2026-01-12</lastmod>
   </url>
 </urlset>

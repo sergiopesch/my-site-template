@@ -19,6 +19,7 @@ export interface EntryMetadata {
     locale: string;
     publishedTime: string;
     modifiedTime: string;
+    images?: Array<{ url: string; alt: string }>;
   };
 }
 
@@ -65,6 +66,10 @@ export function buildSiteMetadata() {
 }
 
 export function buildEntryMetadata(entry: PublishedEntry): EntryMetadata {
+  const image = entry.image && entry.imageAlt
+    ? [{ url: siteConfig.absoluteUrl(entry.image), alt: entry.imageAlt }]
+    : undefined;
+
   return {
     title: entry.title,
     description: entry.summary,
@@ -83,6 +88,7 @@ export function buildEntryMetadata(entry: PublishedEntry): EntryMetadata {
       locale: entry.language,
       publishedTime: entry.datePublished,
       modifiedTime: entry.contentUpdated,
+      images: image,
     },
   };
 }
@@ -95,7 +101,7 @@ export function buildWebsiteJsonLd() {
 }
 
 export function buildBreadcrumbJsonLd(entry: PublishedEntry) {
-  const collectionName = entry.kind === "project" ? "Projects" : "Writing";
+  const collectionName = entry.kind === "project" ? "Projects" : "Thoughts";
   const collectionUrl = siteConfig.absoluteUrl(
     entry.kind === "project" ? siteConfig.routes.projects : siteConfig.routes.writing,
   );
@@ -130,6 +136,10 @@ export function buildEntryJsonLd(entry: PublishedEntry) {
     keywords: entry.topics,
     isAccessibleForFree: true,
   };
+
+  if (entry.image && entry.imageAlt) {
+    article.image = siteConfig.absoluteUrl(entry.image);
+  }
 
   if (entry.sources.length > 0) {
     article.citation = entry.sources.map((source) => source.url);

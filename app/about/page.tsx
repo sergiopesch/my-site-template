@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { ArrowUpRight, Github, Linkedin } from "lucide-react";
 
+import { EditorialHeader } from "@/components/editorial-header";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/config/site";
 
@@ -28,24 +30,32 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={profilePage} />
-      <section className="simple-page">
-        <h1>About</h1>
-        <div className="simple-page__body">
-          <p>
-            This template gives independent makers, writers, researchers, and teams a
-            durable place to publish work on the open web.
-          </p>
-          <p>
-            Replace this page with a concise biography, the context readers need to
-            understand your work, and links to profiles you control. Keep claims specific
-            and keep dates, sources, and licensing honest.
-          </p>
-          <p>
-            Every published entry is available as a human-readable page and a canonical
-            Markdown document, with matching metadata generated from one validated record.
-          </p>
-        </div>
-      </section>
+      <div className="site-shell--narrow site-page page-enter">
+        <section className="about-intro">
+          <EditorialHeader title="About" variant="about" align="center" />
+        </section>
+        <article className="about-body">
+          <div className="about-copy">
+            {siteConfig.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
+          <div className="social-links" aria-label="Social links">
+            <a href={siteConfig.social.x} target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+              <svg role="img" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+              </svg>
+              <ArrowUpRight aria-hidden="true" />
+            </a>
+            <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <Github aria-hidden="true" />
+              <ArrowUpRight aria-hidden="true" />
+            </a>
+            <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+              <Linkedin aria-hidden="true" />
+              <ArrowUpRight aria-hidden="true" />
+            </a>
+          </div>
+        </article>
+      </div>
     </>
   );
 }

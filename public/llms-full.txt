@@ -1,6 +1,126 @@
-# Your Name — Projects and Writing: Full Content
+# Your Name — Projects and Thoughts: Full Content
 
 > Complete machine-readable project and writing corpus. Canonical site: https://example.com
+
+# Personal Site Foundation
+
+> A polished personal site for sharing projects, notes, and an evolving body of work with people and discovery tools.
+
+- Canonical page: [https://example.com/projects/personal-site-foundation](https://example.com/projects/personal-site-foundation)
+- Content type: project
+- Published: 2026-06-10
+- Content updated: 2026-07-14
+- Language: en
+- Topics: Personal publishing, Web design, Open web
+- Repository visibility: public
+- Repository created: 2026-06-10
+- Repository updated: 2026-07-14
+- Source code: [https://github.com/your-username/personal-site](https://github.com/your-username/personal-site)
+- Live project: [https://example.com](https://example.com)
+- Preview image: [https://example.com/images/personal-site-foundation.jpg](https://example.com/images/personal-site-foundation.jpg)
+
+## Content
+
+This project is a placeholder for the story behind your personal site. Introduce the problem you wanted to solve, the audience you designed for, and the idea that guided the work.
+
+![A neutral personal site homepage showing the editorial layout and featured project card.](/images/personal-site-foundation.jpg)
+
+## The idea
+
+The foundation keeps human-readable pages and machine-readable publications in agreement. Projects and thoughts begin as validated Markdown, then become accessible web pages, stable Markdown alternates, feeds, metadata, and a structured content index.
+
+Use this section to explain the choices that matter. You might link to the [live project](https://example.com), the [public repository](https://github.com/your-username/personal-site), or a useful [technical reference](https://nextjs.org/docs).
+
+> A strong project post gives readers enough context to understand the work without requiring them to inspect the code.
+
+## What it includes
+
+- A responsive editorial interface with light and dark themes
+- Project and thought archives generated from one content catalog
+- Canonical URLs, JSON-LD, feeds, Markdown alternates, and discovery files
+- Tests for accessibility, privacy, metadata, navigation, and generated outputs
+
+## What comes next
+
+End with a short reflection or the next improvement you want to explore. Replace every placeholder with your own voice, links, images, and evidence before publishing.
+
+## Provenance and freshness
+
+First-party publication by Your Name. The content was last updated on 2026-07-14.
+
+### Previous addresses
+
+- https://example.com/projects/site-foundation
+
+### Sources
+
+- [Next.js documentation](https://nextjs.org/docs)
+
+---
+
+# Keeping decisions visible
+
+> A short note on documenting the reason behind a choice so future collaborators can understand it.
+
+- Canonical page: [https://example.com/writing/keeping-decisions-visible](https://example.com/writing/keeping-decisions-visible)
+- Content type: post
+- Published: 2026-05-26
+- Content updated: 2026-05-26
+- Language: en
+- Topics: Collaboration, Documentation, Decision making
+
+## Content
+
+A useful decision record does not need to be long. It needs to preserve the context, the options that were considered, and the reason one direction won.
+
+Write the note close to the moment of the decision, then link it from the project where people will naturally look for it. A stable address and a clear date are often more valuable than a perfect format.
+
+For a simple starting point, see the [Architecture Decision Records guide](https://adr.github.io/). Replace this example with a source that supports your own thought.
+
+## Provenance and freshness
+
+First-party publication by Your Name. The content was last updated on 2026-05-26.
+
+---
+
+# Neighborhood Field Guide
+
+> A calm, map-led guide that helps people save favorite places and share useful local recommendations.
+
+- Canonical page: [https://example.com/projects/neighborhood-field-guide](https://example.com/projects/neighborhood-field-guide)
+- Content type: project
+- Published: 2026-04-22
+- Content updated: 2026-05-18
+- Language: en
+- Topics: Product design, Local discovery, Maps
+- Repository visibility: public
+- Repository created: 2026-04-22
+- Repository updated: 2026-05-18
+- Source code: [https://github.com/your-username/neighborhood-field-guide](https://github.com/your-username/neighborhood-field-guide)
+- Live project: [https://example.com/projects/neighborhood-field-guide](https://example.com/projects/neighborhood-field-guide)
+- Preview image: [https://example.com/images/neighborhood-field-guide.jpg](https://example.com/images/neighborhood-field-guide.jpg)
+
+## Content
+
+Neighborhood Field Guide is placeholder content for a product or community project. Use the opening paragraph to say what you made and why it should exist.
+
+![A responsive project archive with neutral example projects.](/images/neighborhood-field-guide.jpg)
+
+## Designing the experience
+
+Describe the main journey in plain language. A visitor can browse a neighborhood, save a place, and send a short list to a friend without creating an account first.
+
+The interface favors legible information, clear provenance, and lightweight interactions. Add a link to a [working prototype](https://example.com/projects/neighborhood-field-guide) or your [design notes](https://example.com/notes/field-guide) when those materials are ready.
+
+## A useful outcome
+
+Explain what changed because of the project. Real outcomes, constraints, and lessons make a case study more useful than a list of features.
+
+## Provenance and freshness
+
+First-party publication by Your Name. The content was last updated on 2026-05-18.
+
+---
 
 # Designing for durable discovery
 
@@ -71,36 +191,101 @@ First-party publication by Your Name. The content was last updated on 2026-03-03
 
 ---
 
-# Local First Field Notes
+# Small Tools Collection
 
-> A small offline-first notebook for collecting observations without sending personal data to a server.
+> A private workbench of focused utilities that remove repetitive steps from everyday creative work.
 
-- Canonical page: [https://example.com/projects/local-first-field-notes](https://example.com/projects/local-first-field-notes)
+- Canonical page: [https://example.com/projects/small-tools-collection](https://example.com/projects/small-tools-collection)
 - Content type: project
-- Published: 2025-01-18
-- Content updated: 2025-03-04
+- Published: 2026-02-08
+- Content updated: 2026-03-01
 - Language: en
-- Topics: Local-first software, Offline workflows, Product design
+- Topics: Developer tools, Automation, Prototyping
 - Repository visibility: private
-- Repository created: 2024-11-12
-- Repository updated: 2025-02-27
+- Repository created: 2026-02-08
+- Repository updated: 2026-03-01
+- Live project: [https://example.com/projects/small-tools-collection](https://example.com/projects/small-tools-collection)
+- Preview image: [https://example.com/images/small-tools-collection.jpg](https://example.com/images/small-tools-collection.jpg)
 
 ## Content
 
-Local First Field Notes explores a simple idea: useful notes should not depend on a network connection or an account being available at the moment of capture.
+This placeholder demonstrates how to publish a project even when its repository must remain private. The public page can explain the purpose and results without exposing a private code URL.
 
-The prototype keeps writing on the device first, makes sync state visible, and treats publishing as a separate editorial action. A note can remain private, move between devices, or become a small public document without changing the original record.
+![A dated list of thought posts in the neutral template.](/images/small-tools-collection.jpg)
 
-The visual system borrows from field journals: generous margins, quiet status labels, and a clear distinction between an observation, its revision history, and the version eventually shared.
+## Keep the scope small
+
+Each utility should do one job clearly. Describe the repeated task, the smallest useful intervention, and how you know the tool improved the workflow.
+
+When the code cannot be shared, link to a [public demonstration](https://example.com/projects/small-tools-collection) or a [related write-up](https://example.com/writing/small-useful-tools) instead.
+
+## Protect what is private
+
+Private repository metadata is deliberately excluded from public URLs, page metadata, feeds, and discovery outputs. The test suite verifies that boundary on every build.
 
 ## Provenance and freshness
 
-First-party publication by Your Name. The content was last updated on 2025-03-04.
+First-party publication by Your Name. The content was last updated on 2026-03-01.
 
-### Previous addresses
+---
 
-- https://example.com/projects/field-notes
+# A practical note on better project handoffs
 
-### Sources
+> What to leave behind so another person can understand a project, run it, and make a careful change.
 
-- [Local-first software](https://www.inkandswitch.com/local-first/)
+- Canonical page: [https://example.com/writing/better-project-handoffs](https://example.com/writing/better-project-handoffs)
+- Content type: post
+- Published: 2025-12-04
+- Content updated: 2025-12-12
+- Language: en
+- Topics: Maintenance, Documentation, Teamwork
+
+## Content
+
+A handoff works when the next person can answer three questions: what is this for, how do I run it, and what should I be careful not to break?
+
+The most helpful document is usually short. Link to the important environment, explain the publishing path, name the checks that matter, and record any constraint that would otherwise be invisible.
+
+Keep that guidance beside the code and verify it from a clean setup. The [README guidance from GitHub](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) is a useful baseline.
+
+## Provenance and freshness
+
+First-party publication by Your Name. The content was last updated on 2025-12-12.
+
+---
+
+# Reading Room
+
+> A minimal reading list that keeps sources, annotations, and durable links together without becoming a social feed.
+
+- Canonical page: [https://example.com/projects/reading-room](https://example.com/projects/reading-room)
+- Content type: project
+- Published: 2025-10-16
+- Content updated: 2026-01-12
+- Language: en
+- Topics: Reading, Knowledge tools, Information design
+- Repository visibility: public
+- Repository created: 2025-10-16
+- Repository updated: 2026-01-12
+- Source code: [https://github.com/your-username/reading-room](https://github.com/your-username/reading-room)
+- Preview image: [https://example.com/images/reading-room.jpg](https://example.com/images/reading-room.jpg)
+
+## Content
+
+Reading Room is a placeholder for a quieter, content-led project. Start with the human need, then show how the design supports it.
+
+![A neutral About page using the same spacing and typography as the rest of the template.](/images/reading-room.jpg)
+
+## Sources remain visible
+
+Every saved item keeps its original title, canonical address, and a short note about why it matters. That makes the collection useful to the person who created it and understandable to someone discovering it later.
+
+Add links to a [source collection](https://example.com/reading) and a [project repository](https://github.com/your-username/reading-room) when you replace this example.
+
+## Design for return visits
+
+The best personal tools become more valuable over time. Use this final section to describe how the project changed after real use and what you would improve next.
+
+## Provenance and freshness
+
+First-party publication by Your Name. The content was last updated on 2026-01-12.

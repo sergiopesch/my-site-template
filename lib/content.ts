@@ -16,6 +16,7 @@ const KIND_DIRECTORIES: Record<EntryKind, string> = {
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const LANGUAGE_PATTERN = /^[a-z]{2}(?:-[A-Z]{2})?$/;
+const PUBLIC_IMAGE_PATTERN = /^\/images\/[a-z0-9][a-z0-9._/-]*$/;
 const INTERNAL_ALIAS_PATTERN = /^\/[a-z0-9]+(?:[/-][a-z0-9]+)*$/;
 const RESERVED_ALIAS_ROUTES = new Set([
   "/",
@@ -116,6 +117,10 @@ export const contentFrontmatterSchema = z
     aliases: z.array(aliasSchema).default([]),
     repository: repositorySchema.optional(),
     demo_url: httpsUrlSchema.optional(),
+    image: z.string().trim().regex(PUBLIC_IMAGE_PATTERN, "image must be a local /images/ path").optional(),
+    image_alt: singleLineText("image alt text", 8).optional(),
+    image_aspect_ratio: z.string().trim().regex(/^\d+(?:\.\d+)?\s*\/\s*\d+(?:\.\d+)?$/, "image aspect ratio must look like 16 / 10").default("16 / 10"),
+    image_fit: z.enum(["cover", "contain"]).default("cover"),
     sources: z.array(sourceSchema).default([]),
     license: licenseSchema.optional(),
   })
@@ -153,6 +158,14 @@ export const contentFrontmatterSchema = z
         message: "aliases must be unique within an entry",
       });
     }
+
+    if (Boolean(value.image) !== Boolean(value.image_alt)) {
+      context.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: [value.image ? "image_alt" : "image"],
+        message: "image and image_alt must be provided together",
+      });
+    }
   });
 
 export type PublicRepository = z.infer<typeof publicRepositorySchema>;
@@ -181,6 +194,10 @@ export interface PublishedEntry {
   repositoryCreated: string | null;
   repositoryUpdated: string | null;
   demoUrl: string | null;
+  image: string | null;
+  imageAlt: string | null;
+  imageAspectRatio: string;
+  imageFit: "cover" | "contain";
   sources: PublishedSource[];
   license: PublishedLicense | null;
   body: string;
@@ -279,6 +296,10 @@ function parseEntry(filePath: string, kind: EntryKind): ParsedEntry {
     repositoryCreated: repository?.created ?? null,
     repositoryUpdated: repository?.updated ?? null,
     demoUrl: data.demo_url ?? null,
+    image: data.image ?? null,
+    imageAlt: data.image_alt ?? null,
+    imageAspectRatio: data.image_aspect_ratio,
+    imageFit: data.image_fit,
     sources: data.sources.map((source) => ({ ...source })),
     license: data.license ? { ...data.license } : null,
     body,

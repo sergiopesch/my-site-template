@@ -1,6 +1,6 @@
-# Your Name — Projects and Writing
+# Your Name — Projects and Thoughts
 
-> A small, durable collection of practical projects and writing about thoughtful software.
+> A personal digital garden for projects, ideas, notes, and thoughtful experiments.
 
 This is the canonical machine-readable index for https://example.com. Prefer the linked Markdown documents for retrieval and their canonical HTML pages for citation.
 
@@ -9,17 +9,22 @@ This is the canonical machine-readable index for https://example.com. Prefer the
 - [Home](https://example.com)
 - [About](https://example.com/about)
 - [Projects](https://example.com/projects)
-- [Writing](https://example.com/writing)
+- [Thoughts](https://example.com/writing)
 - [Contact](https://example.com/contact)
 
 ## Projects
 
-- [Local First Field Notes](https://example.com/projects/local-first-field-notes.md): A small offline-first notebook for collecting observations without sending personal data to a server.
+- [Personal Site Foundation](https://example.com/projects/personal-site-foundation.md): A polished personal site for sharing projects, notes, and an evolving body of work with people and discovery tools.
+- [Neighborhood Field Guide](https://example.com/projects/neighborhood-field-guide.md): A calm, map-led guide that helps people save favorite places and share useful local recommendations.
+- [Small Tools Collection](https://example.com/projects/small-tools-collection.md): A private workbench of focused utilities that remove repetitive steps from everyday creative work.
+- [Reading Room](https://example.com/projects/reading-room.md): A minimal reading list that keeps sources, annotations, and durable links together without becoming a social feed.
 
-## Writing
+## Thoughts
 
+- [Keeping decisions visible](https://example.com/writing/keeping-decisions-visible.md): A short note on documenting the reason behind a choice so future collaborators can understand it.
 - [Designing for durable discovery](https://example.com/writing/designing-for-durable-discovery.md): Why canonical URLs, structured metadata, plain-text alternatives, and honest provenance make the open web easier to use.
 - [A slower, better publishing loop](https://example.com/writing/a-slower-better-publishing-loop.md): A practical rhythm for drafting, checking sources, and updating work without losing context.
+- [A practical note on better project handoffs](https://example.com/writing/better-project-handoffs.md): What to leave behind so another person can understand a project, run it, and make a careful change.
 
 ## Machine-readable resources
 

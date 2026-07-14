@@ -1,5 +1,120 @@
 [
   {
+    "kind": "project",
+    "slug": "personal-site-foundation",
+    "title": "Personal Site Foundation",
+    "summary": "A polished personal site for sharing projects, notes, and an evolving body of work with people and discovery tools.",
+    "language": "en",
+    "topics": [
+      "Personal publishing",
+      "Web design",
+      "Open web"
+    ],
+    "datePublished": "2026-06-10",
+    "contentUpdated": "2026-07-14",
+    "dateModified": "2026-07-14",
+    "route": "/projects/personal-site-foundation",
+    "url": "https://example.com/projects/personal-site-foundation",
+    "markdownRoute": "/projects/personal-site-foundation.md",
+    "markdownUrl": "https://example.com/projects/personal-site-foundation.md",
+    "aliasRoutes": [
+      "/projects/site-foundation"
+    ],
+    "aliases": [
+      "https://example.com/projects/site-foundation"
+    ],
+    "repository": {
+      "visibility": "public",
+      "url": "https://github.com/your-username/personal-site",
+      "created": "2026-06-10",
+      "updated": "2026-07-14"
+    },
+    "repositoryCreated": "2026-06-10",
+    "repositoryUpdated": "2026-07-14",
+    "demoUrl": "https://example.com",
+    "image": "/images/personal-site-foundation.jpg",
+    "imageAlt": "Neutral personal site template homepage with an editorial introduction and featured project card",
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
+    "sources": [
+      {
+        "title": "Next.js documentation",
+        "url": "https://nextjs.org/docs"
+      }
+    ],
+    "license": null,
+    "body": "This project is a placeholder for the story behind your personal site. Introduce the problem you wanted to solve, the audience you designed for, and the idea that guided the work.\n\n![A neutral personal site homepage showing the editorial layout and featured project card.](/images/personal-site-foundation.jpg)\n\n## The idea\n\nThe foundation keeps human-readable pages and machine-readable publications in agreement. Projects and thoughts begin as validated Markdown, then become accessible web pages, stable Markdown alternates, feeds, metadata, and a structured content index.\n\nUse this section to explain the choices that matter. You might link to the [live project](https://example.com), the [public repository](https://github.com/your-username/personal-site), or a useful [technical reference](https://nextjs.org/docs).\n\n> A strong project post gives readers enough context to understand the work without requiring them to inspect the code.\n\n## What it includes\n\n- A responsive editorial interface with light and dark themes\n- Project and thought archives generated from one content catalog\n- Canonical URLs, JSON-LD, feeds, Markdown alternates, and discovery files\n- Tests for accessibility, privacy, metadata, navigation, and generated outputs\n\n## What comes next\n\nEnd with a short reflection or the next improvement you want to explore. Replace every placeholder with your own voice, links, images, and evidence before publishing."
+  },
+  {
+    "kind": "post",
+    "slug": "keeping-decisions-visible",
+    "title": "Keeping decisions visible",
+    "summary": "A short note on documenting the reason behind a choice so future collaborators can understand it.",
+    "language": "en",
+    "topics": [
+      "Collaboration",
+      "Documentation",
+      "Decision making"
+    ],
+    "datePublished": "2026-05-26",
+    "contentUpdated": "2026-05-26",
+    "dateModified": "2026-05-26",
+    "route": "/writing/keeping-decisions-visible",
+    "url": "https://example.com/writing/keeping-decisions-visible",
+    "markdownRoute": "/writing/keeping-decisions-visible.md",
+    "markdownUrl": "https://example.com/writing/keeping-decisions-visible.md",
+    "aliasRoutes": [],
+    "aliases": [],
+    "repository": null,
+    "repositoryCreated": null,
+    "repositoryUpdated": null,
+    "demoUrl": null,
+    "image": null,
+    "imageAlt": null,
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
+    "sources": [],
+    "license": null,
+    "body": "A useful decision record does not need to be long. It needs to preserve the context, the options that were considered, and the reason one direction won.\n\nWrite the note close to the moment of the decision, then link it from the project where people will naturally look for it. A stable address and a clear date are often more valuable than a perfect format.\n\nFor a simple starting point, see the [Architecture Decision Records guide](https://adr.github.io/). Replace this example with a source that supports your own thought."
+  },
+  {
+    "kind": "project",
+    "slug": "neighborhood-field-guide",
+    "title": "Neighborhood Field Guide",
+    "summary": "A calm, map-led guide that helps people save favorite places and share useful local recommendations.",
+    "language": "en",
+    "topics": [
+      "Product design",
+      "Local discovery",
+      "Maps"
+    ],
+    "datePublished": "2026-04-22",
+    "contentUpdated": "2026-05-18",
+    "dateModified": "2026-05-18",
+    "route": "/projects/neighborhood-field-guide",
+    "url": "https://example.com/projects/neighborhood-field-guide",
+    "markdownRoute": "/projects/neighborhood-field-guide.md",
+    "markdownUrl": "https://example.com/projects/neighborhood-field-guide.md",
+    "aliasRoutes": [],
+    "aliases": [],
+    "repository": {
+      "visibility": "public",
+      "url": "https://github.com/your-username/neighborhood-field-guide",
+      "created": "2026-04-22",
+      "updated": "2026-05-18"
+    },
+    "repositoryCreated": "2026-04-22",
+    "repositoryUpdated": "2026-05-18",
+    "demoUrl": "https://example.com/projects/neighborhood-field-guide",
+    "image": "/images/neighborhood-field-guide.jpg",
+    "imageAlt": "Projects archive from the neutral template arranged as a responsive grid of editorial cards",
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
+    "sources": [],
+    "license": null,
+    "body": "Neighborhood Field Guide is placeholder content for a product or community project. Use the opening paragraph to say what you made and why it should exist.\n\n![A responsive project archive with neutral example projects.](/images/neighborhood-field-guide.jpg)\n\n## Designing the experience\n\nDescribe the main journey in plain language. A visitor can browse a neighborhood, save a place, and send a short list to a friend without creating an account first.\n\nThe interface favors legible information, clear provenance, and lightweight interactions. Add a link to a [working prototype](https://example.com/projects/neighborhood-field-guide) or your [design notes](https://example.com/notes/field-guide) when those materials are ready.\n\n## A useful outcome\n\nExplain what changed because of the project. Real outcomes, constraints, and lessons make a case study more useful than a list of features."
+  },
+  {
     "kind": "post",
     "slug": "designing-for-durable-discovery",
     "title": "Designing for durable discovery",
@@ -27,6 +142,10 @@
     "repositoryCreated": null,
     "repositoryUpdated": null,
     "demoUrl": null,
+    "image": null,
+    "imageAlt": null,
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
     "sources": [
       {
         "title": "Cool URIs don't change",
@@ -69,49 +188,117 @@
     "repositoryCreated": null,
     "repositoryUpdated": null,
     "demoUrl": null,
+    "image": null,
+    "imageAlt": null,
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
     "sources": [],
     "license": null,
     "body": "A publishing habit becomes easier to sustain when it has fewer hidden decisions. Capture the idea, shape one useful claim, review it in context, and publish it in formats that can be checked together.\n\nThe slower loop is not an argument for polishing forever. It is a way to separate drafting from distribution. Drafts can be incomplete and private. Published work should have a stable address, a clear summary, and dates that say what actually changed.\n\nOnce those boundaries are explicit, automation can do the repetitive work. A single catalog can produce feeds, indexes, sitemaps, and Markdown alternates while tests check that every representation agrees.\n\nThe result is a quieter system: fewer rushed posts, fewer stale copies, and more confidence that each published note will still make sense when someone discovers it later."
   },
   {
     "kind": "project",
-    "slug": "local-first-field-notes",
-    "title": "Local First Field Notes",
-    "summary": "A small offline-first notebook for collecting observations without sending personal data to a server.",
+    "slug": "small-tools-collection",
+    "title": "Small Tools Collection",
+    "summary": "A private workbench of focused utilities that remove repetitive steps from everyday creative work.",
     "language": "en",
     "topics": [
-      "Local-first software",
-      "Offline workflows",
-      "Product design"
+      "Developer tools",
+      "Automation",
+      "Prototyping"
     ],
-    "datePublished": "2025-01-18",
-    "contentUpdated": "2025-03-04",
-    "dateModified": "2025-03-04",
-    "route": "/projects/local-first-field-notes",
-    "url": "https://example.com/projects/local-first-field-notes",
-    "markdownRoute": "/projects/local-first-field-notes.md",
-    "markdownUrl": "https://example.com/projects/local-first-field-notes.md",
-    "aliasRoutes": [
-      "/projects/field-notes"
-    ],
-    "aliases": [
-      "https://example.com/projects/field-notes"
-    ],
+    "datePublished": "2026-02-08",
+    "contentUpdated": "2026-03-01",
+    "dateModified": "2026-03-01",
+    "route": "/projects/small-tools-collection",
+    "url": "https://example.com/projects/small-tools-collection",
+    "markdownRoute": "/projects/small-tools-collection.md",
+    "markdownUrl": "https://example.com/projects/small-tools-collection.md",
+    "aliasRoutes": [],
+    "aliases": [],
     "repository": {
       "visibility": "private",
-      "created": "2024-11-12",
-      "updated": "2025-02-27"
+      "created": "2026-02-08",
+      "updated": "2026-03-01"
     },
-    "repositoryCreated": "2024-11-12",
-    "repositoryUpdated": "2025-02-27",
-    "demoUrl": null,
-    "sources": [
-      {
-        "title": "Local-first software",
-        "url": "https://www.inkandswitch.com/local-first/"
-      }
-    ],
+    "repositoryCreated": "2026-02-08",
+    "repositoryUpdated": "2026-03-01",
+    "demoUrl": "https://example.com/projects/small-tools-collection",
+    "image": "/images/small-tools-collection.jpg",
+    "imageAlt": "Thoughts archive in the neutral personal site template with dated editorial links",
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
+    "sources": [],
     "license": null,
-    "body": "Local First Field Notes explores a simple idea: useful notes should not depend on a network connection or an account being available at the moment of capture.\n\nThe prototype keeps writing on the device first, makes sync state visible, and treats publishing as a separate editorial action. A note can remain private, move between devices, or become a small public document without changing the original record.\n\nThe visual system borrows from field journals: generous margins, quiet status labels, and a clear distinction between an observation, its revision history, and the version eventually shared."
+    "body": "This placeholder demonstrates how to publish a project even when its repository must remain private. The public page can explain the purpose and results without exposing a private code URL.\n\n![A dated list of thought posts in the neutral template.](/images/small-tools-collection.jpg)\n\n## Keep the scope small\n\nEach utility should do one job clearly. Describe the repeated task, the smallest useful intervention, and how you know the tool improved the workflow.\n\nWhen the code cannot be shared, link to a [public demonstration](https://example.com/projects/small-tools-collection) or a [related write-up](https://example.com/writing/small-useful-tools) instead.\n\n## Protect what is private\n\nPrivate repository metadata is deliberately excluded from public URLs, page metadata, feeds, and discovery outputs. The test suite verifies that boundary on every build."
+  },
+  {
+    "kind": "post",
+    "slug": "better-project-handoffs",
+    "title": "A practical note on better project handoffs",
+    "summary": "What to leave behind so another person can understand a project, run it, and make a careful change.",
+    "language": "en",
+    "topics": [
+      "Maintenance",
+      "Documentation",
+      "Teamwork"
+    ],
+    "datePublished": "2025-12-04",
+    "contentUpdated": "2025-12-12",
+    "dateModified": "2025-12-12",
+    "route": "/writing/better-project-handoffs",
+    "url": "https://example.com/writing/better-project-handoffs",
+    "markdownRoute": "/writing/better-project-handoffs.md",
+    "markdownUrl": "https://example.com/writing/better-project-handoffs.md",
+    "aliasRoutes": [],
+    "aliases": [],
+    "repository": null,
+    "repositoryCreated": null,
+    "repositoryUpdated": null,
+    "demoUrl": null,
+    "image": null,
+    "imageAlt": null,
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
+    "sources": [],
+    "license": null,
+    "body": "A handoff works when the next person can answer three questions: what is this for, how do I run it, and what should I be careful not to break?\n\nThe most helpful document is usually short. Link to the important environment, explain the publishing path, name the checks that matter, and record any constraint that would otherwise be invisible.\n\nKeep that guidance beside the code and verify it from a clean setup. The [README guidance from GitHub](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) is a useful baseline."
+  },
+  {
+    "kind": "project",
+    "slug": "reading-room",
+    "title": "Reading Room",
+    "summary": "A minimal reading list that keeps sources, annotations, and durable links together without becoming a social feed.",
+    "language": "en",
+    "topics": [
+      "Reading",
+      "Knowledge tools",
+      "Information design"
+    ],
+    "datePublished": "2025-10-16",
+    "contentUpdated": "2026-01-12",
+    "dateModified": "2026-01-12",
+    "route": "/projects/reading-room",
+    "url": "https://example.com/projects/reading-room",
+    "markdownRoute": "/projects/reading-room.md",
+    "markdownUrl": "https://example.com/projects/reading-room.md",
+    "aliasRoutes": [],
+    "aliases": [],
+    "repository": {
+      "visibility": "public",
+      "url": "https://github.com/your-username/reading-room",
+      "created": "2025-10-16",
+      "updated": "2026-01-12"
+    },
+    "repositoryCreated": "2025-10-16",
+    "repositoryUpdated": "2026-01-12",
+    "demoUrl": null,
+    "image": "/images/reading-room.jpg",
+    "imageAlt": "About page in the neutral template with balanced editorial text and social profile links",
+    "imageAspectRatio": "16 / 10",
+    "imageFit": "cover",
+    "sources": [],
+    "license": null,
+    "body": "Reading Room is a placeholder for a quieter, content-led project. Start with the human need, then show how the design supports it.\n\n![A neutral About page using the same spacing and typography as the rest of the template.](/images/reading-room.jpg)\n\n## Sources remain visible\n\nEvery saved item keeps its original title, canonical address, and a short note about why it matters. That makes the collection useful to the person who created it and understandable to someone discovering it later.\n\nAdd links to a [source collection](https://example.com/reading) and a [project repository](https://github.com/your-username/reading-room) when you replace this example.\n\n## Design for return visits\n\nThe best personal tools become more valuable over time. Use this final section to describe how the project changed after real use and what you would improve next."
   }
 ]

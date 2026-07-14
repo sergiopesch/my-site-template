@@ -180,6 +180,7 @@ export function renderMarkdownDocument(entry: PublishedEntry): string {
     renderMetadataLine("Repository updated", entry.repositoryUpdated),
     renderMetadataLine("Source code", repositoryUrl, repositoryUrl),
     renderMetadataLine("Live project", entry.demoUrl, entry.demoUrl),
+    renderMetadataLine("Preview image", entry.image ? siteConfig.absoluteUrl(entry.image) : null, entry.image ? siteConfig.absoluteUrl(entry.image) : null),
     renderMetadataLine("License", entry.license?.name ?? null, entry.license?.url),
     renderMetadataLine("License scope", entry.license?.scope ?? null),
     renderMetadataLine("License verified", entry.license?.verified ?? null),
@@ -347,6 +348,8 @@ export function buildContentIndex(entries: PublishedEntry[]) {
       repository_created: entry.repositoryCreated,
       repository_updated: entry.repositoryUpdated,
       demo_url: entry.demoUrl,
+      image: entry.image ? siteConfig.absoluteUrl(entry.image) : null,
+      image_alt: entry.imageAlt,
       sources: entry.sources,
       license: entry.license,
       provenance: {
@@ -384,14 +387,14 @@ This is the canonical machine-readable index for ${siteConfig.url}. Prefer the l
 - [Home](${siteConfig.url})
 - [About](${siteConfig.absoluteUrl(siteConfig.routes.about)})
 - [Projects](${siteConfig.absoluteUrl(siteConfig.routes.projects)})
-- [Writing](${siteConfig.absoluteUrl(siteConfig.routes.writing)})
+- [Thoughts](${siteConfig.absoluteUrl(siteConfig.routes.writing)})
 - [Contact](${siteConfig.absoluteUrl(siteConfig.routes.contact)})
 
 ## Projects
 
 ${renderEntryList(projects)}
 
-## Writing
+## Thoughts
 
 ${renderEntryList(writing)}
 

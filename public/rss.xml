@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Your Name — Projects and Writing</title>
+    <title>Your Name — Projects and Thoughts</title>
     <link>https://example.com</link>
-    <description>A small, durable collection of practical projects and writing about thoughtful software.</description>
+    <description>A personal digital garden for projects, ideas, notes, and thoughtful experiments.</description>
     <language>en</language>
     <atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Keeping decisions visible</title>
+      <link>https://example.com/writing/keeping-decisions-visible</link>
+      <guid isPermaLink="true">https://example.com/writing/keeping-decisions-visible</guid>
+      <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
+      <dc:date>2026-05-26</dc:date>
+      <dc:creator>Your Name</dc:creator>
+      <category>Collaboration</category>
+      <category>Documentation</category>
+      <category>Decision making</category>
+      <description>A short note on documenting the reason behind a choice so future collaborators can understand it.</description>
+      <content:encoded><![CDATA[<p>A useful decision record does not need to be long. It needs to preserve the context, the options that were considered, and the reason one direction won.</p><p>Write the note close to the moment of the decision, then link it from the project where people will naturally look for it. A stable address and a clear date are often more valuable than a perfect format.</p><p>For a simple starting point, see the Architecture Decision Records guide. Replace this example with a source that supports your own thought.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Designing for durable discovery</title>
       <link>https://example.com/writing/designing-for-durable-discovery</link>
@@ -32,6 +45,19 @@
       <category>Sustainable pace</category>
       <description>A practical rhythm for drafting, checking sources, and updating work without losing context.</description>
       <content:encoded><![CDATA[<p>A publishing habit becomes easier to sustain when it has fewer hidden decisions. Capture the idea, shape one useful claim, review it in context, and publish it in formats that can be checked together.</p><p>The slower loop is not an argument for polishing forever. It is a way to separate drafting from distribution. Drafts can be incomplete and private. Published work should have a stable address, a clear summary, and dates that say what actually changed.</p><p>Once those boundaries are explicit, automation can do the repetitive work. A single catalog can produce feeds, indexes, sitemaps, and Markdown alternates while tests check that every representation agrees.</p><p>The result is a quieter system: fewer rushed posts, fewer stale copies, and more confidence that each published note will still make sense when someone discovers it later.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A practical note on better project handoffs</title>
+      <link>https://example.com/writing/better-project-handoffs</link>
+      <guid isPermaLink="true">https://example.com/writing/better-project-handoffs</guid>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+      <dc:date>2025-12-12</dc:date>
+      <dc:creator>Your Name</dc:creator>
+      <category>Maintenance</category>
+      <category>Documentation</category>
+      <category>Teamwork</category>
+      <description>What to leave behind so another person can understand a project, run it, and make a careful change.</description>
+      <content:encoded><![CDATA[<p>A handoff works when the next person can answer three questions: what is this for, how do I run it, and what should I be careful not to break?</p><p>The most helpful document is usually short. Link to the important environment, explain the publishing path, name the checks that matter, and record any constraint that would otherwise be invisible.</p><p>Keep that guidance beside the code and verify it from a clean setup. The README guidance from GitHub is a useful baseline.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

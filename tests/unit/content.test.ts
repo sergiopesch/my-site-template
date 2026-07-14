@@ -25,7 +25,7 @@ function fixtureContent(files: Record<string, string>): string {
 test("the canonical site origin is HTTPS, has no trailing slash, and uses neutral identity", () => {
   assert.equal(siteConfig.url, "https://example.com");
   assert.equal(siteConfig.name, "Your Name");
-  assert.equal(siteConfig.title, "Your Name — Projects and Writing");
+  assert.equal(siteConfig.title, "Your Name — Projects and Thoughts");
   assert.equal(siteConfig.email, "hello@example.com");
   assert.equal(validateSiteUrl("https://example.org"), "https://example.org");
 
@@ -61,16 +61,20 @@ test("the public catalog is normalized, stable, and excludes drafts", () => {
   assert.deepEqual(
     entries.map((entry) => entry.title),
     [
+      "Personal Site Foundation",
+      "Keeping decisions visible",
+      "Neighborhood Field Guide",
       "Designing for durable discovery",
       "A slower, better publishing loop",
-      "Local First Field Notes",
+      "Small Tools Collection",
+      "A practical note on better project handoffs",
+      "Reading Room",
     ],
   );
-  assert.equal(entries.length, 3);
-  assert.equal(getEntriesByKind("project").length, 1);
-  assert.equal(getEntriesByKind("writing").length, 2);
-  assert.equal(getEntriesByKind("post").length, 2);
-  assert.deepEqual(entries.map((entry) => entry.kind), ["post", "post", "project"]);
+  assert.equal(entries.length, 8);
+  assert.equal(getEntriesByKind("project").length, 4);
+  assert.equal(getEntriesByKind("writing").length, 4);
+  assert.equal(getEntriesByKind("post").length, 4);
   assert.equal(entries.some((entry) => entry.slug === "unpublished-workbench-note"), false);
 
   for (const entry of entries) {

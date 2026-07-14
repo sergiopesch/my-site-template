@@ -10,6 +10,7 @@ import {
   getEntriesByKind,
   getEntry,
 } from "../../lib/content";
+import { stripAgentQuickStart } from "../../lib/presentation";
 
 function fixtureContent(files: Record<string, string>): string {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "site-content-"));
@@ -90,6 +91,13 @@ test("canonical slugs and declared aliases resolve to the same public entry", ()
   assert.equal(alias?.url, canonical.url);
   assert.equal(alias?.markdownUrl, `${canonical.url}.md`);
   assert.equal(getEntry("writing", "unpublished-workbench-note"), null);
+});
+
+test("agent quick starts are excluded from human content without mutating their source", () => {
+  const source = `Human-facing conclusion.\n\n***\n\n## Agent Quick Start\n\n\`\`\`\nMachine instructions.\n\`\`\``;
+
+  assert.equal(stripAgentQuickStart(source), "Human-facing conclusion.");
+  assert.match(source, /## Agent Quick Start/);
 });
 
 test("private repositories cannot carry a URL", () => {

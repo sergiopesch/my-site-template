@@ -79,6 +79,34 @@ test("feeds contain writing only while discovery surfaces contain every entry", 
   }
 });
 
+test("agent quick starts stay in retrieval artifacts but not reader surfaces", () => {
+  const entries = getAllEntries().map((entry) =>
+    entry.slug === "designing-for-durable-discovery"
+      ? {
+          ...entry,
+          body: `${entry.body}\n\n***\n\n## Agent Quick Start\n\n\`\`\`\nMachine instructions.\n\`\`\``,
+        }
+      : entry,
+  );
+  const artifacts = createArtifacts(entries);
+  const feed = JSON.parse(artifacts["feed.json"]);
+  const index = JSON.parse(artifacts["content-index.json"]);
+  const feedEntry = feed.items.find(
+    (item: { url: string }) => item.url.endsWith("/writing/designing-for-durable-discovery"),
+  );
+  const indexedEntry = index.items.find(
+    (item: { slug: string }) => item.slug === "designing-for-durable-discovery",
+  );
+
+  assert.doesNotMatch(feedEntry.content_text, /Agent Quick Start/);
+  assert.doesNotMatch(artifacts["rss.xml"], /Agent Quick Start/);
+  assert.match(indexedEntry.content_text, /Agent Quick Start/);
+  assert.match(
+    artifacts["writing/designing-for-durable-discovery.md"],
+    /## Agent Quick Start/,
+  );
+});
+
 test("writer removes stale Markdown and check mode reports drift without mutation", () => {
   const publicDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "site-public-"));
   const artifacts = createArtifacts(getAllEntries());

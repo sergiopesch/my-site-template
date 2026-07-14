@@ -16,6 +16,13 @@ export function formatShortDate(value: string) {
   }).format(new Date(`${value}T00:00:00.000Z`));
 }
 
+export function stripAgentQuickStart(body: string) {
+  return body
+    .replace(/\r\n?/g, "\n")
+    .replace(/\n(?:\*\*\*\n\n)?## Agent Quick Start(?:\n[\s\S]*)?$/, "")
+    .trimEnd();
+}
+
 export function readingMinutes(markdown: string) {
   const words = markdown
     .replace(/```[\s\S]*?```/g, " ")

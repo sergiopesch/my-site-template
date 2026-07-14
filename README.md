@@ -71,6 +71,8 @@ sources:
 
 Projects can also declare `demo_url` and a nested `repository` object. A public repository includes `visibility: public`, its HTTPS `url`, `created`, and `updated` dates. A private repository includes only `visibility: private`, `created`, and `updated`; its URL is intentionally not a valid field. Drafts and private repository URLs are excluded before routes, metadata, feeds, indexes, JSON-LD, Markdown alternates, or page props are created.
 
+An optional terminal `## Agent Quick Start` section is treated as machine-only. It remains available in Markdown alternates, the content index, and `llms-full.txt`, but is excluded from human HTML, RSS, and JSON Feed reader content. Provenance and Markdown discovery remain available through metadata and machine resources without adding machine-oriented panels or controls to public pages.
+
 ## Machine-readable publishing
 
 `npm run generate:machine` creates all public machine surfaces from the same validated catalog:

@@ -88,6 +88,9 @@ test("home and content routes render canonical, accessible publication UI", asyn
 
   const jsonLd = await page.locator('script[type="application/ld+json"]').allTextContents();
   expect(jsonLd.some((value) => value.includes("BlogPosting"))).toBe(true);
+  await expect(page.getByLabel("Content provenance")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Read as Markdown" })).toHaveCount(0);
+  await expect(page.getByText("Agent Quick Start", { exact: true })).toHaveCount(0);
   expect(consoleErrors).toEqual([]);
 });
 

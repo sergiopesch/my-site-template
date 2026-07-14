@@ -11,6 +11,7 @@ import {
   type ContentOptions,
   type PublishedEntry,
 } from "../lib/content";
+import { stripAgentQuickStart } from "../lib/presentation";
 
 const SCRIPT_DIRECTORY = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(SCRIPT_DIRECTORY, "..");
@@ -245,7 +246,7 @@ ${urls
 }
 
 function bodyAsHtml(entry: PublishedEntry): string {
-  return entry.body
+  return stripAgentQuickStart(entry.body)
     .split(/\n\n+/)
     .map(markdownToText)
     .filter(Boolean)
@@ -305,7 +306,7 @@ export function buildJsonFeed(entries: PublishedEntry[]) {
       external_url: entry.demoUrl ?? undefined,
       title: entry.title,
       summary: entry.summary,
-      content_text: markdownToText(entry.body),
+      content_text: markdownToText(stripAgentQuickStart(entry.body)),
       date_published: toRfc3339(entry.datePublished),
       date_modified: toRfc3339(entry.contentUpdated),
       language: entry.language,

@@ -186,7 +186,7 @@ main {
 
 .home-hero h1,
 .page-heading,
-.article-header h1,
+.article-title,
 .not-found h1 {
   margin: 0;
   font-family: var(--display);
@@ -358,14 +358,7 @@ main {
   text-decoration: none;
 }
 
-.article-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 2rem;
-}
-
-.article-header h1 {
+.article-title {
   max-width: 1020px;
   font-size: clamp(3.5rem, 7vw, 7.2rem);
 }
@@ -374,36 +367,6 @@ main {
   max-width: 780px;
   margin: 1.6rem 0 2.8rem;
   font-size: clamp(1.15rem, 2vw, 1.45rem);
-}
-
-.provenance {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2rem;
-  margin: 0;
-  padding: 1.8rem 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.provenance dt {
-  margin-bottom: 0.5rem;
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.provenance dd {
-  margin: 0;
-  overflow-wrap: anywhere;
-  font-size: 0.85rem;
-  line-height: 1.45;
-}
-
-.provenance a {
-  color: var(--accent);
 }
 
 .markdown-body {
@@ -545,14 +508,6 @@ main {
     padding: 3rem 0;
   }
 
-  .article-header {
-    grid-template-columns: 1fr;
-  }
-
-  .provenance {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .site-footer {
     align-items: flex-start;
     padding: 2rem 0;
@@ -595,10 +550,6 @@ main {
 
   .page-heading {
     font-size: 3.8rem;
-  }
-
-  .provenance {
-    grid-template-columns: 1fr;
   }
 
   .site-footer {

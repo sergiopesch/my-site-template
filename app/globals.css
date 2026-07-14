@@ -48,12 +48,6 @@ a {
   color: inherit;
 }
 
-a[href],
-a[href] :where(:not(svg, svg *)) {
-  font-style: italic;
-  font-weight: 700;
-}
-
 :focus-visible {
   outline: 2px solid hsl(var(--foreground) / 0.75);
   outline-offset: 4px;
@@ -148,8 +142,8 @@ a[href] :where(:not(svg, svg *)) {
   border-radius: 999px;
   color: hsl(var(--foreground) / 0.92);
   font-size: 0.72rem;
-  font-style: italic;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 600;
   letter-spacing: 0.34em;
   text-decoration: none;
   text-transform: uppercase;
@@ -171,7 +165,7 @@ a[href] :where(:not(svg, svg *)) {
   align-items: center;
   color: hsl(var(--foreground) / 0.7);
   font-size: 0.76rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.22em;
   text-decoration: none;
   text-transform: uppercase;
@@ -732,6 +726,12 @@ a[href] :where(:not(svg, svg *)) {
 .editorial-prose a {
   color: hsl(var(--foreground));
   text-decoration: none;
+}
+
+.project-post-content a[href],
+.project-post-content a[href] :where(:not(svg, svg *)) {
+  font-style: italic;
+  font-weight: 700;
 }
 
 .editorial-prose a:hover {

@@ -40,7 +40,9 @@ export function EntryPage({ entry }: { entry: PublishedEntry }) {
             ) : null}
           </EditorialHeader>
         </section>
-        <article className="entry-article">
+        <article
+          className={`entry-article${entry.kind === "project" ? " project-post-content" : ""}`}
+        >
           <MarkdownBody markdown={humanBody} />
         </article>
       </div>

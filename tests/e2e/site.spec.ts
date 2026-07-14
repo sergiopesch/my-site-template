@@ -142,8 +142,17 @@ test("theme preference changes through the isolated client control", async ({ pa
   await expect(page.locator("html")).toHaveAttribute("data-theme", changedTheme!);
 });
 
-test("the visual foundation stays responsive and makes every hyperlink bold and italic", async ({ page }) => {
+test("project post links are emphasized without changing navigation typography", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+
+  for (const link of await page.getByRole("navigation").getByRole("link").all()) {
+    await expect(link).not.toHaveCSS("font-style", "italic");
+  }
+  await expect(
+    page.getByRole("link", { name: "Open Personal Site Foundation live site" })
+  ).not.toHaveCSS("font-style", "italic");
+
   await page.goto("/projects/personal-site-foundation");
 
   const internalWidth = await page.evaluate(() => document.documentElement.scrollWidth);
@@ -154,4 +163,17 @@ test("the visual foundation stays responsive and makes every hyperlink bold and 
   await expect(link).toHaveCSS("font-weight", "700");
   await expect(link).toHaveCSS("font-style", "italic");
   await expect(page.getByAltText(/neutral personal site homepage/i)).toBeVisible();
+  await expect(page.getByRole("link", { name: "View site" })).not.toHaveCSS(
+    "font-style",
+    "italic"
+  );
+
+  for (const navigationLink of await page.getByRole("navigation").getByRole("link").all()) {
+    await expect(navigationLink).not.toHaveCSS("font-style", "italic");
+  }
+
+  await page.goto("/writing/keeping-decisions-visible");
+  const thoughtLink = page.getByRole("link", { name: "Architecture Decision Records guide" });
+  await expect(thoughtLink).toBeVisible();
+  await expect(thoughtLink).not.toHaveCSS("font-style", "italic");
 });

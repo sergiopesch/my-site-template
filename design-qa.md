@@ -47,6 +47,7 @@ Title wrapping differs where neutral placeholder titles have different lengths. 
 - Primary navigation was used to move from the homepage to Thoughts.
 - The light and dark theme control was toggled and its preference survived a reload.
 - Project cards, project detail links, external links, and back navigation were verified.
+- Bold italic link emphasis is scoped to project article content; navigation, branding, archive actions, project header actions, and thought links retain their original typography.
 - The site was tested with JavaScript enabled and disabled.
 - The 390 pixel mobile viewport had no horizontal overflow.
 - Browser tests assert that no console errors occur on the homepage and content route.

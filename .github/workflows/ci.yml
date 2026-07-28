@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Audit dependencies
-        run: npm audit --omit=dev --audit-level=high
+        run: npm run audit
 
       - name: Verify generated publications
         run: npm run check:machine

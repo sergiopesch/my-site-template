@@ -46,7 +46,10 @@ const singleLineText = (label: string, minimum = 1) =>
     .string()
     .trim()
     .min(minimum, `${label} is required`)
-    .refine((value) => !/[\u0000\r\n]/.test(value), `${label} must be a single line`);
+    .refine(
+      (value) => !value.includes("\0") && !value.includes("\r") && !value.includes("\n"),
+      `${label} must be a single line`,
+    );
 
 export const isoDateSchema = z
   .string()

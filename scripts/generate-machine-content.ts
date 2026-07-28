@@ -93,7 +93,7 @@ function escapeCdata(value: string): string {
 }
 
 function escapeMarkdownText(value: string): string {
-  return value.replace(/([\\\[\]])/g, "\\$1");
+  return value.replace(/([\\[\]])/g, "\\$1");
 }
 
 export function markdownToText(value: string): string {

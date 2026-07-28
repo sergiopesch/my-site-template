@@ -37,3 +37,35 @@ test("the foundation stays server-first and contains no agent or chat runtime", 
     false,
   );
 });
+
+test("the full dependency graph stays covered by the security audit", () => {
+  const packageJson = JSON.parse(
+    fs.readFileSync(path.join(projectRoot, "package.json"), "utf8"),
+  );
+  const packageLock = JSON.parse(
+    fs.readFileSync(path.join(projectRoot, "package-lock.json"), "utf8"),
+  );
+  const workflow = fs.readFileSync(
+    path.join(projectRoot, ".github/workflows/ci.yml"),
+    "utf8",
+  );
+  const braceExpansionVersions = Object.entries(
+    packageLock.packages as Record<string, { version?: string }>,
+  )
+    .filter(([packagePath]) => packagePath.endsWith("node_modules/brace-expansion"))
+    .map(([, metadata]) => metadata.version)
+    .filter((version): version is string => Boolean(version));
+
+  assert.equal(packageJson.devDependencies["eslint-config-next"], undefined);
+  assert.equal(packageJson.scripts.audit, "npm audit --audit-level=high");
+  assert.match(workflow, /run: npm run audit/);
+  assert.doesNotMatch(workflow, /npm audit[^\n]*--omit=dev/);
+  assert.ok(braceExpansionVersions.length > 0);
+  assert.equal(
+    braceExpansionVersions.every(
+      (version) =>
+        version.localeCompare("5.0.8", undefined, { numeric: true }) >= 0,
+    ),
+    true,
+  );
+});

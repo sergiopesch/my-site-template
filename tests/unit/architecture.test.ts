@@ -64,7 +64,7 @@ test("the full dependency graph stays covered by the security audit", () => {
   assert.equal(
     braceExpansionVersions.every(
       (version) =>
-        version.localeCompare("5.0.8", undefined, { numeric: true }) >= 0,
+        version.localeCompare("5.0.9", undefined, { numeric: true }) >= 0,
     ),
     true,
   );
